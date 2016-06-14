@@ -47,15 +47,23 @@
 
 /* main-wrap */
 
-    .main-wrap{display: flex;justify-content: space-between;align-items: flex-start;
-        .left-column{width: 260px;padding-right: 5px;}
-        .right-column{width: calc(100% - 260px);}
+    .good_main-wrap{display: flex;justify-content: space-between;align-items: flex-start;
+        .good_left-column{width: 260px;padding-right: 5px;}
+        .good_right-column{width: calc(100% - 260px);}
     }
 
 /* /main-wrap */
 
 /* left-column links styles */
 
+    .good_left-column-links{
 
+        .good_left-column-links-title{font-weight: 700;font-size: 17px;bottom: 25px;}
+
+        .good_left-column-links-wrap{margin-bottom: 35px;
+            &:last-child{margin-bottom: 0;}
+        }
+
+    }
 
 /* /left-column links styles */
