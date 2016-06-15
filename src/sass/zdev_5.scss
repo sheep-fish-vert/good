@@ -62,7 +62,7 @@
 
 /*END options panel------------------------------------------------------*/
 /* button------------------------------------------------------*/
-.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;letter-spacing: 0.7px; padding: 4px 13px 6px 15px; display: inline-block;
+.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;letter-spacing: 0.7px; padding: 4px 13px 6px 15px; display: inline-block; background-color: #fff;
         &:hover{ background-color: #434343; color: #fff;}
     &.good_black{        background-color: #000; color: #fff; border-color: #000;
         &:hover{background-color: #fff; color: #000;}
