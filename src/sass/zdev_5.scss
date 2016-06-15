@@ -1,0 +1,39 @@
+/*other-trader-items------------------------------------------------------*/
+    .good_other-items{
+        .good_other-items-wrap{}
+        .good_title{ width: 100%; text-align: center;
+            h3{ font:300 35px/1.26 'Open Sans'; color: #010101;}
+        }
+        .good_items-wrap{ display: flex; justify-content:flex-start; flex-wrap: wrap;    padding-top: 24px;}
+        .good_item{ width: 261px; display: block; text-decoration: none; margin-right: 42px;    margin-bottom: 56px;
+            &:nth-child(4n){ margin-right: 0;}
+            &:hover{
+                .good_img:before{ opacity:1;}
+            }
+        }
+        .good_img{ position: relative; width: 100%; height: 315px; overflow: hidden;
+            img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
+            &:before{ content: attr(data-hover); background-color: rgba(0,0,0,0.75); font:300 20px/1.26 'Open Sans'; color: #fff; position: absolute; width: 100%; height: 100%; left: 0; top: 0; text-align: center; z-index: 10; padding-top: 150px; opacity: 0; transition: opacity 300ms;}
+        }
+        .good_txt{padding: 27px 10px 0;
+            .good_name{font:600 14px/1.26 'Open Sans'; color: #010101; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 7px;}
+            .good_price{font:300 14px/1.26 'Open Sans'; color: #010101; width: 100%; text-align: center;}
+        }
+    }
+
+/*END other-trader-items------------------------------------------------------*/
+/*services-items------------------------------------------------------*/
+    .good_services-items{
+        .good_services-items-wrap{}
+        .good_services-one-item{}
+        .good_img{
+            img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
+            .good_top{}
+        }
+        .good_txt{
+            .good_name{font:600 14px/1.26 'Open Sans'; color: #010101; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 7px;}
+            .good_price{font:300 14px/1.26 'Open Sans'; color: #010101; width: 100%; text-align: center;}
+        }
+    }
+
+/*END services-items------------------------------------------------------*/
