@@ -300,10 +300,18 @@
                 }
 
                 .good_card_item_info{display: flex;justify-content: space-between;align-items: flex-start;
-                    .good_card_item_info_left{width: 220px;padding-right: 5px;}
+                    .good_card_item_info_left{width: 220px;padding-right: 5px;
+                        p{margin: 0 0 10px 0;font-size: 15px;font-weight: 300;
+                            b{font-weight: 600;}
+                            &:last-child{margin: 0;}
+                        }
+                    }
                     .good_card_item_info_right{width: calc(100% - 220px);
-                        .good_card_item_info_right_row{display: flex;align-items: flex-start; justify-content: flex-start;flex-wrap: wrap;
-                            .good_card_item_info_right_col{width: 50%;}
+                        .good_card_item_info_right_row{display: flex;align-items: flex-start; justify-content: flex-start;flex-wrap: wrap;margin-bottom: 10px;
+                            .good_card_item_info_right_col{width: 50%;
+                                p{margin: 0;font-weight: 600;font-size: 15px;color:#010101;}
+                            }
+                            &:last-child{margin-bottom: 10px;}
                         }
                     }
                 }
