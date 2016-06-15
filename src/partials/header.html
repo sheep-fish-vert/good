@@ -1,124 +1,128 @@
 <!-- HEADER -->
 <header class="good_header">
 
-    <div class="good_header">
+    <div class="good_mbox">
 
-        <div class="good_header_top">
+        <div class="good_header_wrap">
 
-            <div class="good_header_logo">
-                <a href="#">
-                    <img src="images/logo.jpg" alt="" />
-                </a>
-            </div>
+            <div class="good_header_top">
 
-            <div class="good_header_top_right">
-
-                <div class="good_header_about_link">
-                    <a href="#">О сервисе</a>
+                <div class="good_header_logo">
+                    <a href="#">
+                        <img src="images/logo.jpg" alt="" />
+                    </a>
                 </div>
 
-                <div class="good_header_search">
-                    <form class="good_search_form">
-                        <div class="good_search_input">
-                            <input type="text" name="header_search" required="required" />
-                        </div>
-                        <div class="good_search_submit">
-                            <button type="submit">
-                                <img src="images/loop-img.png" alt="" />
-                            </button>
-                        </div>
-                    </form>
-                    <div class="good_header_search_icon">
-                        <img src="images/loop-img.png" alt="" />
+                <div class="good_header_top_right">
+
+                    <div class="good_header_about_link">
+                        <a href="#">О сервисе</a>
                     </div>
-                </div>
 
-
-                <div class="good_country_select">
-
-                    <form action="ajax.php" class="good_country_select_form good_submit_change">
-
-                        <select name="country_select" class="good_country_select_main good_style_it good_select_has_img">
-                            <option value="country1" data-image="images/country.png"></option>
-                            <option value="country2" data-image="images/country.png"></option>
-                            <option value="country3" data-image="images/country.png"></option>
-                        </select>
-
-                    </form>
-
-                </div>
-
-                <!-- if user logined -->
-
-                    <div class="good_header_user_control">
-
-                        <div class="good_header_likes">
-                            <div class="good_likes_img">
-                                <img src="images/hearth.png" alt="" />
+                    <div class="good_header_search">
+                        <form class="good_search_form">
+                            <div class="good_search_input">
+                                <input type="text" name="header_search" required="required" />
                             </div>
-                            <div class="good_likes_value">99</div>
+                            <div class="good_search_submit">
+                                <button type="submit">
+                                    <img src="images/loop-img.png" alt="" />
+                                </button>
+                            </div>
+                        </form>
+                        <div class="good_header_search_icon">
+                            <img src="images/loop-img.png" alt="" />
                         </div>
+                    </div>
 
-                        <div class="good_user_logined">
-                            <form action="ajax.php" class="good_user_logined_form good_submit_change">
-                                <select name="user_select" class="good_user_logined_select good_style_it">
-                                    <option value="user1">Denis@mail.ru</option>
-                                    <option value="user2">Denis2@mail.ru</option>
-                                    <option value="user3">Denis3@mail.ru</option>
-                                </select>
-                            </form>
-                        </div>
 
-                        <div class="good_link_exit">
-                            <a href="#">Выход</a>
-                        </div>
+                    <div class="good_country_select">
+
+                        <form action="ajax.php" class="good_country_select_form good_submit_change">
+
+                            <select name="country_select" class="good_country_select_main good_style_it good_select_has_img">
+                                <option value="country1" data-image="images/country.png"></option>
+                                <option value="country2" data-image="images/country.png"></option>
+                                <option value="country3" data-image="images/country.png"></option>
+                            </select>
+
+                        </form>
 
                     </div>
 
-                <!-- /if user logined -->
+                    <!-- if user logined -->
 
-                <!-- if user unlogined -->
+                        <div class="good_header_user_control">
 
-                    <div class="good_header_user_control" style="display: none;">
+                            <div class="good_header_likes">
+                                <div class="good_likes_img">
+                                    <img src="images/hearth.png" alt="" />
+                                </div>
+                                <div class="good_likes_value">99</div>
+                            </div>
 
-                        <div class="good_link_register">
-                            <a href="#">Регистрация</a>
+                            <div class="good_user_logined">
+                                <form action="ajax.php" class="good_user_logined_form good_submit_change">
+                                    <select name="user_select" class="good_user_logined_select good_style_it">
+                                        <option value="user1">Denis@mail.ru</option>
+                                        <option value="user2">Denis2@mail.ru</option>
+                                        <option value="user3">Denis3@mail.ru</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="good_link_exit">
+                                <a href="#">Выход</a>
+                            </div>
+
                         </div>
-                        <div class="good_link_exit">
-                            <a href="#">Выход</a>
+
+                    <!-- /if user logined -->
+
+                    <!-- if user unlogined -->
+
+                        <div class="good_header_user_control" style="display: none;">
+
+                            <div class="good_link_register">
+                                <a href="#">Регистрация</a>
+                            </div>
+                            <div class="good_link_exit">
+                                <a href="#">Выход</a>
+                            </div>
+
                         </div>
 
-                    </div>
+                    <!-- /if user unlogined -->
 
-                <!-- /if user unlogined -->
+                </div>
 
             </div>
 
-        </div>
+            <div class="good_header_bottom">
 
-        <div class="good_header_bottom">
+                <nav class="good_header_nav">
+                    <ul>
+                        <li>
+                            <a href="#">Мужчинам</a>
+                        </li>
+                        <li>
+                            <a href="#">Женщинам</a>
+                        </li>
+                        <li>
+                            <a href="#">Детям</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги красоты</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <nav class="good_header_nav">
-                <ul>
-                    <li>
-                        <a href="#">Мужчинам</a>
-                    </li>
-                    <li>
-                        <a href="#">Женщинам</a>
-                    </li>
-                    <li>
-                        <a href="#">Детям</a>
-                    </li>
-                    <li>
-                        <a href="#">Услуги красоты</a>
-                    </li>
-                </ul>
-            </nav>
+                <div class="good_sell_item">
+                    <a href="#" class="good_button">
+                        <span>Продать товар</span>
+                    </a>
+                </div>
 
-            <div class="good_sell_item">
-                <a href="#" class="good_button">
-                    <span>Продать товар</span>
-                </a>
             </div>
 
         </div>
