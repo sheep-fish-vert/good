@@ -51,7 +51,7 @@ function filterCatalog(){
 }
 
 $(document).ready(function(){
-    $('input:not(.good_filter_catalog_checkbox), select:not(.good_select_has_img)').styler();
+    $('input:not(.good_filter_catalog_checkbox), select:not(.good_select_has_img),.input:not(.good_not_style)').styler();
     massonry();
     filterCatalog();
 });

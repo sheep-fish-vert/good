@@ -79,7 +79,7 @@ function validate(form, options){
             });
         }
 
-        $('[type="password"]',$form).each(function(){
+        $('.good__pass',$form).each(function(){
             if($(this).is("#re_password") == true){
                 $(this).rules("add", {
                     minlength:3,

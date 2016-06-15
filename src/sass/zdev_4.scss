@@ -84,6 +84,11 @@
     .jq-selectbox__dropdown{border-radius: 0px;box-shadow: none;}
 }
 
+// checkbox
+.good_checkbox.jq-checkbox{width: 16px;height: 15px;border:1px solid #000;border-radius: 0;background: #fff;box-shadow: none;
+    .jq-checkbox__div{}
+}
+
 // good_center_tab
 .good_center_tab{margin-bottom: 40px;
     .good_center_tab_title{font-family: "Open Sans";font-weight: 300;font-size: 35px;color: #010101;margin: 30px 0px;}
@@ -136,12 +141,31 @@
 //good_options_change_pass page
 .good_options_change_pass{
     .good_form_row{display: flex;align-items: center;margin-bottom: 14px;
+        &.error{
+            input{border-color: red !important}
+        }
         .good_item_left{width: 207px;padding-right: 10px;font-size: 15px;font-weight: 300;}
         .good_item_right{width: 216px;
             input{border:1px solid #d1d1d1;padding: 0 10px;height: 29px;font-weight: 300;}
         }
     }
     .good_form_submit{
-        button{height: 34px;min-width: 150px;}
+        button{height: 34px;min-width: 150px;background-color: #fff;
+            &:hover{background-color: #000;}
+        }
+    }
+}
+
+// good_options_notice
+.good_options_notice{font-weight: 300;font-size: 15px;color: #000000;
+    p{margin: 0px 0px 15px;}
+    .good_form_row{display: flex;align-items: center;width: 100%;max-width: 480px;justify-content: space-between;padding: 13px 0;
+        &::selection{display: none;}
+         span::selection,.good_item_left::selection{display: none;}
+    }
+    .good_form_submit{
+        button{height: 34px;min-width: 150px;background-color: #fff;
+            &:hover{background-color: #000;}
+        }
     }
 }
