@@ -95,11 +95,52 @@
 
 /* /submit form by change */
 
+/* card slider */
+
+    function cardSlider(){
+
+        $('.good_slider_big').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            draggable:false,
+            asNavFor: '.good_slider_small'
+        });
+
+        $('.good_slider_small').slick({
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            dots:false,
+            arrows:true,
+            vertical:true,
+            focusOnSelect:true,
+            asNavFor:'.good_slider_big'
+        });
+
+    }
+
+/* /card slider */
+
+/* card show info */
+
+    function cardShowInfo(){
+
+        $(document).on('click','.good_card_trader_right_text span', function(){
+            $(this).parents('.good_card_trader_right_row').addClass('good_active');
+        });
+
+    }
+
+/* /card show info */
+
 $(document).ready(function(){
 
     toggleLeftLinksSecondLevel();
     showHeaderSearchInput();
     submitFormByChange();
+    cardSlider();
+    cardShowInfo();
 
 });
 
