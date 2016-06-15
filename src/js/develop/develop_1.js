@@ -21,6 +21,37 @@
 
 /* /left columns second level toggle */
 
+/* form styler with img */
+
+    function formStylerWithImg(){
+
+        $('.good_select_has_img').each(function(){
+
+            var selectImg = $(this);
+
+            $(this).styler({
+                onFormStyled:function(){
+                    var parent = $(this).parents('.good_select_has_img');
+                    parent.find('li').removeAttr('style');
+                    parent.find('li').each(function(){
+                        parent.append('<img src='+$(this).attr('data-image')+' alt="" />');
+                    });
+
+                },
+                onSelectClosed:function(){
+
+                }
+            });
+
+        });
+
+
+
+
+    }
+
+/* /form styler with img */
+
 $(document).ready(function(){
 
     toggleLeftLinksSecondLevel();
@@ -28,6 +59,8 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
+
+    formStylerWithImg();
 
 });
 
