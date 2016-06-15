@@ -40,13 +40,76 @@
                 </div>
             </div>
         </div>
-        <div class="good_filter_catalog_row">
+        <div class="good_filter_catalog_row next">
             <div class="good_filter_catalog_title good_filter_catalog_item">Фильтр:</div>
             <div class="good_filter_catalog_item">
                 <div class="good_filter_catalog_item_subtitl">Цена:</div>
                 <div class="good_filter_catalog_item_wrap">
-                    <div class="good_filter_catalog_price_range" id="good_filter_catalog_price_range"></div>
-                    <input type="text" name="good_filter_catalog_price_range" value="" data-min="0" data-max="10000" data-now-value="2500" data-step="200" data-thousand=" " data-postfix="руб" readonly="readonly">
+                    <div class="good_filter_catalog_price_range_wrap">
+                        <div class="good_filter_catalog_price_range" id="good_filter_catalog_price_range"></div>
+                        <span class="good_filter_catalog_price_plus"></span>
+                        <span class="good_filter_catalog_price_minus"></span>
+                    </div>
+                    <input type="text" name="good_filter_catalog_price_range" value="2 500 руб" data-min="0" data-max="10000" data-now-value="2500" data-step="200" data-thousand=" " data-postfix="руб" readonly="readonly" class="good_filter_catalog_price_input">
+                </div>
+            </div>
+            <div class="good_filter_catalog_item">
+                <div class="good_filter_catalog_item_subtitl">Цвет:</div>
+                <div class="good_filter_catalog_item_wrap">
+                    <div class="good_filter_catalog_item_color">
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#000000" class="good_filter_catalog_checkbox">
+                            <span style="background: #000000;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#662d91" class="good_filter_catalog_checkbox">
+                            <span style="background: #662d91;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#0000ff" class="good_filter_catalog_checkbox">
+                            <span style="background: #0000ff;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#cccccc" class="good_filter_catalog_checkbox">
+                            <span style="background: #cccccc;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#f49ac1" class="good_filter_catalog_checkbox">
+                            <span style="background: #f49ac1;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#f26522" class="good_filter_catalog_checkbox">
+                            <span style="background: #f26522;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#ff0000" class="good_filter_catalog_checkbox">
+                            <span style="background: #ff0000;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#603913" class="good_filter_catalog_checkbox">
+                            <span style="background: #603913;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#39b54a" class="good_filter_catalog_checkbox">
+                            <span style="background: #39b54a;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#fff200" class="good_filter_catalog_checkbox">
+                            <span style="background: #fff200;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#6dcff6" class="good_filter_catalog_checkbox">
+                            <span style="background: #6dcff6;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#ffffff" class="good_filter_catalog_checkbox">
+                            <span style="background: #ffffff;"></span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="filter_catalog_color" value="#f4efd6" class="good_filter_catalog_checkbox">
+                            <span style="background: #f4efd6;"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
