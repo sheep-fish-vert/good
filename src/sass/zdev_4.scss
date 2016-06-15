@@ -52,19 +52,20 @@
                 &:before{transform: rotate(90deg);}
             }
 
-            .good_filter_catalog_item_color{width: 128px;display: flex;align-items: flex-start;justify-content: flex-start;flex-wrap: wrap;
-                label{position: relative;overflow: hidden;margin-right: 2px;margin-bottom: 2px;
-                    input{font-size: 0;opacity: 0;position: absolute;
-                        &:checked + span{border-color: #bdbdbd;}
-                    }
-                    span{height: 15px;width: 16px;display: inline-block;border:1px solid transparent;}
-                }
-            }
+
 
         }
     }
 }
 
+.good_filter_catalog_item_color{width: 128px;display: flex;align-items: flex-start;justify-content: flex-start;flex-wrap: wrap;
+    label{position: relative;overflow: hidden;margin-right: 2px;margin-bottom: 2px;
+        input{font-size: 0;opacity: 0;position: absolute;
+            &:checked + span{border-color: #bdbdbd;}
+        }
+        span{height: 15px;width: 16px;display: inline-block;border:1px solid transparent;}
+    }
+}
 // radio button
 .jq-radio{width: 10px;height: 10px;border-color: #8d8d8d;background: #fff;box-shadow: none;margin: 0 1px 0 0;
     &.focused{border-color: rgba(255, 0, 0, 0.29);}
