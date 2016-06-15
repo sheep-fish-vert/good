@@ -71,7 +71,7 @@
             </div>
 
             <div class="good_card_price">
-                <strike>€28,5</strike> €25,5
+                <span>€28,5</span> €25,5
             </div>
 
             <div class="good_card_item_main">
@@ -91,19 +91,19 @@
 
                         <div class="good_card_trader_right">
                             <div class="good_card_trader_right_row">
-                                <div class="good_card_trader_right_text" data-text="показать">Телефон:</div>
+                                <div class="good_card_trader_right_text">Телефон:<span>показать</span></div>
                                 <div class="good_card_trader_value">+375(99)999-99-9990</div>
                             </div>
                             <div class="good_card_trader_right_row">
-                                <div class="good_card_trader_right_text" data-text="показать">Skype:</div>
+                                <div class="good_card_trader_right_text">Skype:<span>показать</span></div>
                                 <div class="good_card_trader_value">someSkype</div>
                             </div>
                             <div class="good_card_trader_right_row">
                                 <div class="good_card_trader_right_text">Рейтинг:</div>
                                 <div class="good_card_trader_right_stars">
-                                    <span class="active"></span>
-                                    <span class="active"></span>
-                                    <span class="active"></span>
+                                    <span class="good_active"></span>
+                                    <span class="good_active"></span>
+                                    <span class="good_active"></span>
                                     <span></span>
                                     <span></span>
                                 </div>
@@ -147,6 +147,7 @@
 
                                 <div class="good_card_item_info_right_col">
                                     <select name="card_select" class="good_card_item_info_select" data-placeholder="Выберите размер">
+                                        <option></option>
                                         <option value="size1">size1</option>
                                         <option value="size2">size2</option>
                                         <option value="size3">size3</option>
@@ -156,55 +157,55 @@
                                 <div class="good_card_item_info_right_col">
                                     <div class="good_card_item_color">
                                         <label>
-                                            <input type="radio" name="card_color" value="000000">
+                                            <input type="radio" name="card_color" class="good_not_style" value="000000">
                                             <span style="background:#000000"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="662d91">
+                                            <input type="radio" name="card_color" class="good_not_style" value="662d91">
                                             <span style="background:#662d91"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="0000ff">
+                                            <input type="radio" name="card_color" class="good_not_style" value="0000ff">
                                             <span style="background:#0000ff"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="cccccc">
+                                            <input type="radio" name="card_color" class="good_not_style" value="cccccc">
                                             <span style="background:#cccccc"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="f49ac1">
+                                            <input type="radio" name="card_color" class="good_not_style" value="f49ac1">
                                             <span style="background:#f49ac1"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="f26522">
+                                            <input type="radio" name="card_color" class="good_not_style" value="f26522">
                                             <span style="background:#f26522"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="ff0000">
+                                            <input type="radio" name="card_color" class="good_not_style" value="ff0000">
                                             <span style="background:#ff0000"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="603913">
+                                            <input type="radio" name="card_color" class="good_not_style" value="603913">
                                             <span style="background:#603913"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="39b54a">
+                                            <input type="radio" name="card_color" class="good_not_style" value="39b54a">
                                             <span style="background:#39b54a"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="fff200">
+                                            <input type="radio" name="card_color" class="good_not_style" value="fff200">
                                             <span style="background:#fff200"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="6dcff6">
+                                            <input type="radio" name="card_color" class="good_not_style" value="6dcff6">
                                             <span style="background:#6dcff6"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="ffffff">
+                                            <input type="radio" name="card_color" class="good_not_style" value="ffffff">
                                             <span style="background:#ffffff"></span>
                                         </label>
                                         <label>
-                                            <input type="radio" name="card_color" value="f4efd6">
+                                            <input type="radio" name="card_color" class="good_not_style" value="f4efd6">
                                             <span style="background:#f4efd6"></span>
                                         </label>
                                     </div>
@@ -236,14 +237,21 @@
 
                     <div class="good_card_buttons">
 
-                        <a href="#" class="good_button">
+                        <button type="submit" class="good_button">
                             <span><img src="images/hearth.png" alt="" />Отложить</span>
-                        </a>
+                        </button>
 
                         <a href="#" class="good_button good_black">
                             <span>Перейти в магазин</span>
                         </a>
 
+                    </div>
+
+
+                    <div class="good_card_right_bottom">
+                        <p><b>Местонахождение товара:</b> г. Москва, ул. Котова, д. 4, магазин “Корона”</p>
+                        <p><a href="#">Посмотреть карту</a></p>
+                        <p><b>Время работы:</b> 09.00 -20.00</p>
                     </div>
 
                 </form>
