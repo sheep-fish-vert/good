@@ -58,9 +58,8 @@
 
 /*END options panel------------------------------------------------------*/
 /* button------------------------------------------------------*/
-.good_button{
-    button,
-    a{font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none;}
+.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;
+        &:hover{ background-color: #434343; color: #fff;}
 }
 
 /*END button------------------------------------------------------*/
