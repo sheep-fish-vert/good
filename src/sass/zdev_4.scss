@@ -86,7 +86,7 @@
 
 // checkbox
 .good_checkbox.jq-checkbox{width: 16px;height: 15px;border:1px solid #000;border-radius: 0;background: #fff;box-shadow: none;
-    .jq-checkbox__div{}
+    .jq-checkbox__div{background:transparent url('../images/good-galochka.png') center center no-repeat;box-shadow: none;margin: 0;border-radius: 0; width: 13px;}
 }
 
 // good_center_tab
@@ -159,7 +159,8 @@
 // good_options_notice
 .good_options_notice{font-weight: 300;font-size: 15px;color: #000000;
     p{margin: 0px 0px 15px;}
-    .good_form_row{display: flex;align-items: center;width: 100%;max-width: 480px;justify-content: space-between;padding: 13px 0;
+    .good_form_row{display: flex;align-items: center;width: 100%;max-width: 480px;justify-content: space-between;padding: 13px 0;padding-right: 10px;border-bottom: 1px solid #d7d7d7;
+        &:first-child,&:last-child{border-bottom: none;}
         &::selection{display: none;}
          span::selection,.good_item_left::selection{display: none;}
     }
