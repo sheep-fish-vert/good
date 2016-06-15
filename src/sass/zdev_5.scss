@@ -44,21 +44,24 @@
 /*options panel------------------------------------------------------*/
     .good_options-panel-white{
         .good_panel{border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; position: relative;}
-        .good_left{padding: 20px 0 26px 10px;
-            a{ display: inline-block; text-decoration: none; color: #1f1f1f;font:400 italic 15px/1.26 'Open Sans';
-                img{vertical-align: top; margin-top: 2px; letter-spacing: 1px;}
+        .good_left{padding: 20px 0 24px 13px;
+            a{ display: inline-block; text-decoration: none; color: #1f1f1f;font:400 italic 15px/1.26 'Open Sans';letter-spacing: 1px; margin-right: 76px;
+                img{vertical-align: top; margin-top: 2px; margin-right: 10px;}
+                &:hover{ text-decoration: underline; color: #ccc;}
             }
         }
-        .good_right{ position: absolute; top: 0; right: 0;
-            .good_money{ color: #454545; font:600 13px/1.26 'Open Sans';
+        .good_right{ position: absolute; top: 0; right: 0; height: 100%; width: 363px; padding: 21px 0 0 26px;
+            &:before{content: ''; left: 0; top: 11px; width: 1px; height: 41px; background-color: #d7d7d7; display: block; position: absolute;}
+            .good_money{ color: #454545; font:600 13px/1.26 'Open Sans'; display: inline-block;letter-spacing: 0.7px;
                 b{color: #000; font:700 15px/1.26 'Open Sans';}
             }
+            .good_button{ position: absolute; right: 14px; top: 18px;padding: 4px 13px 6px 15px;}
         }
     }
 
 /*END options panel------------------------------------------------------*/
 /* button------------------------------------------------------*/
-.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;
+.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;letter-spacing: 0.7px;
         &:hover{ background-color: #434343; color: #fff;}
 }
 

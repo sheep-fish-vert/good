@@ -94,7 +94,9 @@
 
 /* header */
 
-    .good_header{
+    .good_header{margin-bottom: 15px;
+
+        .good_header_wrap{padding-bottom: 38px;border-bottom: 1px solid #ebebeb;}
 
         .good_header_top, .good_header_bottom, .good_header_top_right, .good_header_user_control, .good_header_likes, .good_header_nav ul{display: flex;align-items: center;justify-content: space-between;}
 
@@ -156,6 +158,10 @@
                 a{font-weight: 700;color:#010101;font-size: 17px;text-decoration: none;transition:color 300ms ease;
                     &:hover{color:#ff0000;}
                 }
+            }
+
+            .good_sell_item{
+                .good_button{min-width: 161px;display: inline-block;text-align: center;padding:8px 0;}
             }
 
         }
