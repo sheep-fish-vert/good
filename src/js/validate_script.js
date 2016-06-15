@@ -29,15 +29,15 @@ function validate(form, options){
             },
             highlight: function(element, errorClass, validClass) {
                 $(element).addClass('error');
-                $(element).closest('.form_row').addClass('error').removeClass('valid');
+                $(element).closest('.good_form_row').addClass('error').removeClass('valid');
                 if( typeof(setings.highlightFunction) === 'function' ) {
                     setings.highlightFunction(form);
                 }
             },
             unhighlight: function(element, errorClass, validClass) {
                 $(element).removeClass('error');
-                if($(element).closest('.form_row').is('.error')){
-                    $(element).closest('.form_row').removeClass('error').addClass('valid');
+                if($(element).closest('.good_form_row').is('.error')){
+                    $(element).closest('.good_form_row').removeClass('error').addClass('valid');
                 }
                 if( typeof(setings.unhighlightFunction) === 'function' ) {
                     setings.unhighlightFunction(form);
@@ -90,7 +90,7 @@ function validate(form, options){
                     }
                 });
             }
-        })
+        });
     }
 }
 
@@ -267,6 +267,7 @@ $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.good_search_form');
+   validate('.good_options_change_pass form');
 
    Maskedinput();
    fancyboxForm();
