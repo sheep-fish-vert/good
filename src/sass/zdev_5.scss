@@ -64,7 +64,7 @@
 /* button------------------------------------------------------*/
 .good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;letter-spacing: 0.7px; padding: 4px 13px 6px 15px;
         &:hover{ background-color: #434343; color: #fff;}
-    &.black{        background-color: #000; color: #fff; border-color: #000;
+    &.good_black{        background-color: #000; color: #fff; border-color: #000;
         &:hover{background-color: #fff; color: #000;}
     }
 }
@@ -74,14 +74,27 @@
     .good_trader-page{
         .good_trader-wrap{
             .good_top{ width: 100%; text-align: center;}
-            .good_bot{
-                .good_img{
+            .good_bot{margin-top: -23px;
+                .good_img{ overflow: hidden; width: 290px; height: 300px; position: relative; float: left;
                     img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
                 }
-                .good_txt{}
-                .good_title{}
+                .good_txt{ padding-top: 76px; margin-left:300px; letter-spacing: 1px;padding-left: 37px;}
+                .good_title{padding-bottom: 34px;
+                    h3{font:300 35px/1.26 'Open Sans'; color: #000; margin: 0;}
+                }
                 .good_content{}
-                .good_first{}
+                .good_column{ display: inline-block;
+                    .good_show{ text-decoration: underline; cursor: pointer;}
+                    .good_hide{ display: none;}
+                    p{ margin: 0;font:300 15px/1.26 'Open Sans'; color: #000;margin-bottom: 13px;
+                        a{ text-decoration: underline;margin: 0;font:300 15px/1.26 'Open Sans'; color: #000;}
+                    }
+                    b{font:600 15px/1.26 'Open Sans'; color: #000;}
+                    img{ vertical-align: bottom;}
+                    .good_but-wrap{}
+
+                }
+                .good_first
                 .good_second{}
                 .good_third{}
             }
