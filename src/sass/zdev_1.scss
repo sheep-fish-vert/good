@@ -47,7 +47,8 @@
 
 /* main-wrap for pages with left & right columns */
 
-    .good_main_wrap{display: flex;justify-content: space-between;align-items: flex-start;
+    .good_main_wrap{
+        .good_mbox{display: flex;justify-content: space-between;align-items: flex-start;}
         .good_left_column{width: 260px;padding-right: 5px;}
         .good_right_column{width: calc(100% - 260px);}
     }
