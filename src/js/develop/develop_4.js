@@ -9,6 +9,7 @@ function massonry(){
 
 
 $(document).ready(function(){
+    $('input, select').styler();
     massonry();
 });
 
