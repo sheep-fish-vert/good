@@ -97,3 +97,30 @@
         a{height: 36px;padding: 0 13px;display: flex;align-items: center;justify-content: center;font-size: 15px;font-weight: bold;color: #010101;text-decoration: none;}
     }
 }
+
+// options  -  Rewievs page
+.good_customer_reviews{
+    .row{display: flex;flex-wrap: wrap;
+        .good_customer_reviews_img{height: 97px;width: 97px;position: relative;overflow: hidden;
+            img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);max-width: none;min-height: 100%;min-width: 100%;border-radius: 50%;overflow: hidden;}
+        }
+        .good_customer_reviews_description{width: calc(100% - 97px);padding-left: 18px;display: flex;flex-direction:column;
+            .good_customer_reviews_name{margin-bottom: 15px;padding-top: 4px;
+                b{font-weight: 600;font-size: 15px;color: #010101;}
+            }
+            .good_customer_reviews_text{font-size: 15px;color: rgb(0, 0, 0);line-height: 1.667;margin-bottom: 20px;
+                p{margin: 0;}
+            }
+            .good_customer_reviews_rating{display: flex;margin-bottom: 33px;
+                .good_customer_reviews_rating_item{display: flex;align-items: center;margin-right: 40px;
+                    b{font-weight: 600;font-size: 15px;color: #010101;margin-right: 8px;}
+                }
+                .good_customer_reviews_rating_item_star{display: flex;
+                    .good_star{width: 18px;height: 16px;background:transparent url('../images/good_customer_reviews_rating_item_star.png') right top no-repeat;overflow: hidden;
+                        &.good_active{background:transparent url('../images/good_customer_reviews_rating_item_star.png') left top no-repeat;}
+                    }
+                }
+            }
+        }
+    }
+}
