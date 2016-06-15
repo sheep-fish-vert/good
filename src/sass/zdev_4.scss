@@ -18,5 +18,30 @@
     }
 }
 .good_filter_catalog{
-    .good_filter_catalog_row{display: flex;align-items: center;}
+    .good_filter_catalog_row{display: flex;align-items: center;justify-content: space-around;
+        .good_filter_catalog_radio_button{display: flex;align-items: center;color: #000000;font-size: 13px;font-weight: 300;}
+        .good_filter_catalog_title{font-weight: bold;font-size: 15px;color: #010101;margin-right: 14px;}
+        .good_filter_catalog_radio{
+            label{margin: 0 5px;}
+        }
+        // 2-th row
+        .good_filter_catalog_item{display: flex;flex-direction:column;
+            .noUi-horizontal{height: 4px;background-color: #e0e0e0;width: 90px;margin:0 auto;
+                .noUi-handle{width: 5px;height: 10px;background:#000;border:none;box-shadow: none;border-radius: 0;top: -4px;
+                    &:after,&:before{display: none;}
+                }
+            }
+            .good_filter_catalog_price_range{
+                &+input{text-align: center;border:none;}
+            }
+        }
+    }
+}
+
+// radio button
+.jq-radio{width: 10px;height: 10px;border-color: #8d8d8d;background: #fff;box-shadow: none;margin: 0 1px 0 0;
+    &.focused{border-color: rgba(255, 0, 0, 0.29);}
+    &.checked{
+        .jq-radio__div{width: 4px;height: 4px;margin: 2px 0 0 2px;background:#000;}
+    }
 }
