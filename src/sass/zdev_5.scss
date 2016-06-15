@@ -5,7 +5,8 @@
             h3{ font:300 35px/1.26 'Open Sans'; color: #010101;}
         }
         .good_items-wrap{ display: flex; justify-content:flex-start; flex-wrap: wrap;    padding-top: 24px;}
-        .good_item{ width: 261px; display: block; text-decoration: none;
+        .good_item{ width: 261px; display: block; text-decoration: none;margin-right: 42px;   margin-bottom: 53px;
+            &:nth-child(4n){ margin-right: 0;}
             &:hover{
                 .good_img:before{ opacity:1;}
             }
@@ -61,8 +62,30 @@
 
 /*END options panel------------------------------------------------------*/
 /* button------------------------------------------------------*/
-.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;letter-spacing: 0.7px;
+.good_button{ font:600 14px/1.26 'Open Sans'; color: #000; border:1px solid #434343; text-decoration: none; transition: all 300ms;letter-spacing: 0.7px; padding: 4px 13px 6px 15px;
         &:hover{ background-color: #434343; color: #fff;}
+    &.black{        background-color: #000; color: #fff; border-color: #000;
+        &:hover{background-color: #fff; color: #000;}
+    }
 }
 
 /*END button------------------------------------------------------*/
+/* trader page------------------------------------------------------*/
+    .good_trader-page{
+        .good_trader-wrap{
+            .good_top{ width: 100%; text-align: center;}
+            .good_bot{
+                .good_img{
+                    img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
+                }
+                .good_txt{}
+                .good_title{}
+                .good_content{}
+                .good_first{}
+                .good_second{}
+                .good_third{}
+            }
+
+        }
+    }
+/*END trader page------------------------------------------------------*/
