@@ -44,7 +44,7 @@
 /*END services-items------------------------------------------------------*/
 /*options panel------------------------------------------------------*/
     .good_options-panel-white{
-        .good_panel{border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; position: relative;}
+        .good_panel{ border-bottom: 1px solid #ebebeb; position: relative;margin-top: -12px;}
         .good_left{padding: 20px 0 24px 13px;
             a{ display: inline-block; text-decoration: none; color: #1f1f1f;font:400 italic 15px/1.26 'Open Sans';letter-spacing: 1px; margin-right: 76px;
                 img{vertical-align: top; margin-top: 2px; margin-right: 10px;}
@@ -52,7 +52,7 @@
             }
         }
         .good_right{ position: absolute; top: 0; right: 0; height: 100%; width: 363px; padding: 21px 0 0 26px;
-            &:before{content: ''; left: 0; top: 11px; width: 1px; height: 41px; background-color: #d7d7d7; display: block; position: absolute;}
+            &:before{content: ''; left: 0; top: 11px; width: 1px; height: 41px; background-color: #ebebeb; display: block; position: absolute;}
             .good_money{ color: #454545; font:600 13px/1.26 'Open Sans'; display: inline-block;letter-spacing: 0.7px;
                 b{color: #000; font:700 15px/1.26 'Open Sans';}
             }
