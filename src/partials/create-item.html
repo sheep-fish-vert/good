@@ -1,12 +1,26 @@
 <section class="good_create-item">
     <div class="good_mbox">
         <div class="good_title">
-            <h2></h2>
+            <h2>Создание товара</h2>
         </div>
+
         <div class="good_content">
+            <form action="ajax.php" name="create-item">
             <div class="good_subtitle">
-                <h5></h5>
+                <h5>1. Выберите категорию товара</h5>
             </div>
+            <div class="good_category">
+                <ul>
+                    <li><p>Категория:</p></li>
+                    <li>
+                        <label> <input type="radio" name="q12" value="female"><span>Женское</span></label>
+                        <label> <input type="radio" name="q12" value="male"><span>Мужское</span></label>
+                        <label> <input type="radio" name="q12" value="child"><span>Детское</span></label>
+                        <label> <input type="radio" name="q12" value="service"><span>Услуги красоты</span></label>
+                    </li>
+                </ul>
+            </div>
+            </form>
         </div>
     </div>
 </section>
