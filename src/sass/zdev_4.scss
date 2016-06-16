@@ -169,3 +169,28 @@
         }
     }
 }
+
+// good_about_service
+.good_about_service{
+    ul{margin: 0;padding: 0;list-style-type: none;}
+    .good_about_service_title{font-size: 35px;color: rgb(1, 1, 1);line-height: 1.714;text-align: center;padding: 42px 0px;font-weight: 300;}
+    .good_about_service_table{
+        .good_about_service_head{display: flex;align-items: center;justify-content: space-between;padding: 11px 0px;border-top: 1px solid;border-bottom: 1px solid #000;
+            .good_about_service_head_title{color: #010101;font-weight: bold;font-size: 17px;}
+            .good_about_service_head_icon{display: flex;align-items: center;
+                a{text-decoration: none;margin: 0 8px 0 11px;}
+            }
+        }
+    }
+    .good_about_service_body{display: flex;
+        .good_about_service_left{width: 260px;border-right: 1px solid #000;padding-top: 15px;
+            li{font-weight: 600;font-size: 13px;color: #000;padding-right: 10px;margin-bottom: 10px;
+                span{cursor:pointer;}
+            }
+        }
+        .good_about_service_right{width: calc(100% - 260px);padding-left: 35px;padding-bottom: 20px;padding-top: 20px;
+            b{font-size: 20px;color: #010101;font-weight: bold;margin: 17px 0px 37px;display: block;}
+            p{font-size: 15px;font-weight: 300;color: #000;line-height: 1.667;}
+        }
+    }
+}

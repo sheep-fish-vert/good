@@ -50,10 +50,19 @@ function filterCatalog(){
     }
 }
 
+function tabsAboutService(){
+    $('.good_about_service_right li').not(':first').hide();
+    $('.good_about_service_body .good_about_service_left li').click(function(){
+        $('.good_about_service_body .good_about_service_left li').removeClass('active').eq($(this).index()).addClass('active');
+        $('.good_about_service_right li').hide().eq($(this).index()).fadeIn();
+    }).eq(0).addClass('active');
+}
+
 $(document).ready(function(){
     $('input:not(.good_filter_catalog_checkbox):not(.good_not_style), select:not(.good_select_has_img)').styler();
     massonry();
     filterCatalog();
+    tabsAboutService();
 });
 
 $(window).load(function(){
