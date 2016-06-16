@@ -430,6 +430,7 @@
         .good_form_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;margin-bottom: 30px;
             &:last-child{padding-top: 20px;}
             .good_options_left{width: calc(100% - 500px);color:#010101;font-size: 15px;display: flex;align-items: flex-start;justify-content: space-between;
+                &.good_no_flex{display: block;}
                 b{font-weight: 600;}
 
                 .good_options_form_left{width: 160px;line-height: 1.55;}

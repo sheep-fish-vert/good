@@ -1,26 +1,573 @@
-<section class="good_create-item">
-    <div class="good_mbox">
-        <div class="good_title">
-            <h2>Создание товара</h2>
-        </div>
+<section class="good_options">
 
-        <div class="good_content">
-            <form action="ajax.php" name="create-item">
-            <div class="good_subtitle">
-                <h5>1. Выберите категорию товара</h5>
-            </div>
-            <div class="good_category">
-                <ul>
-                    <li><p>Категория:</p></li>
-                    <li>
-                        <label> <input type="radio" name="q12" value="female"><span>Женское</span></label>
-                        <label> <input type="radio" name="q12" value="male"><span>Мужское</span></label>
-                        <label> <input type="radio" name="q12" value="child"><span>Детское</span></label>
-                        <label> <input type="radio" name="q12" value="service"><span>Услуги красоты</span></label>
-                    </li>
-                </ul>
-            </div>
+    <div class="good_mbox">
+
+        <h2 class="good_title">Создание товара</h2>
+
+        <div class="good_options_form">
+            <form class="good_options_form_main">
+
+                <div class="good_form_title">1. Выберите категорию товара</div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <b>Категория:</b>
+                        </div>
+                        <div class="good_options_form_right">
+                            <div class="good_options_category_item good_category_radio_item">
+                                <label>
+                                    <input type="radio" name="category_radio" value="category_val1"data-service=false />
+                                    <span>Женское</span>
+                                </label>
+                            </div>
+                            <div class="good_options_category_item">
+                                <label>
+                                    <input type="radio" name="category_radio" value="category_val2"data-service=false />
+                                    <span>Мужское</span>
+                                </label>
+                            </div>
+                            <div class="good_options_category_item">
+                                <label>
+                                    <input type="radio" name="category_radio" value="category_val3"data-service=false />
+                                    <span>Детское</span>
+                                </label>
+                            </div>
+                            <div class="good_options_category_item">
+                                <label>
+                                    <input type="radio" name="category_radio" value="category_val4" data-service=true />
+                                    <span>Услуги красоты</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left good_no_flex">
+                        <div class="good_options_radio_lists_wrap">
+                            <div class="good_options_radio_list">
+                                <div class="good_options_small_title">Одежда</div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Блузки, рубашки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Брюки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Верхняя одежда</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Битловки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Джинсы</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Кардиганы, кофты</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Колготки, носки, чулки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Комбинезоны</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Костюмы</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="good_options_radio_list">
+                                <div class="good_options_small_title">Одежда</div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Блузки, рубашки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Брюки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Верхняя одежда</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Битловки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Джинсы</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Кардиганы, кофты</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Колготки, носки, чулки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Комбинезоны</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Костюмы</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="good_options_radio_list">
+                                <div class="good_options_small_title">Одежда</div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Блузки, рубашки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Брюки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Верхняя одежда</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Битловки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Джинсы</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Кардиганы, кофты</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Колготки, носки, чулки</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Комбинезоны</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Костюмы</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="good_options_radio_list">
+                                <div class="good_options_small_title">Услуги красоты</div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Косметические услуги</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Маникюр, педикюр</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Массажные услуги</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Наращивание волос</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Наращивание ресничек</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Услуги визажиста</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Услуги парикмахера</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Стрижка бороды</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Услуги фотографа</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Солярий</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="good_not_style" name="category_radio" />
+                                        <span>Фитнес, йога</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+
+                    </div>
+                </div>
+
+                <div class="good_form_title">
+                    <div class="good_service_block">
+                        2. Основные параметры услуги
+                    </div>
+                    <div class="good_item_block">
+                        2. Основные параметры товара
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <b>Наименование:</b>
+                        </div>
+                        <div class="good_options_form_right">
+                            <input type="text" name="create_name" placeholder="Наименование" />
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+                        Введите понятный заголовок, чтобы привлечь покупателя
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <div class="good_item_block">
+                                <b>Краткое описание товара:</b>
+                            </div>
+                            <div class="good_service_block">
+                                <b>Краткое описание услуги:</b>
+                            </div>
+                        </div>
+                        <div class="good_options_form_right">
+                            <div class="good_options_textarea_wrap good_sumbols_limit">
+                                <textarea name="create_deacript"  maxlength="120"></textarea>
+                                <p>Осталось <span></span> символов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <b>
+                                Ключевые слова:
+                            </b>
+                        </div>
+                        <div class="good_options_form_right">
+                            <div class="good_options_textarea_wrap good_sumbols_limit">
+                                <textarea name="create_tag"  maxlength="120"></textarea>
+                                <p>Осталось <span></span> символов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+                        Введите слова через запятую
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <b>
+                                Детальное описание*:
+                            </b>
+                        </div>
+                        <div class="good_options_form_right">
+                            <div class="good_options_textarea_wrap good_sumbols_limit">
+                                <textarea name="create_descript_more"  maxlength="120" required="required"></textarea>
+                                <p>Осталось <span></span> символов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+                        <div class="good_item_block">
+                            Введите описание товара
+                        </div>
+                        <div class="good_service_block">
+                            Введите описание услуги
+                        </div>
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <div class="good_item_block">
+                                Цена товара:
+                            </div>
+                            <div class="good_service_block">
+                                Цена услуги:
+                            </div>
+                        </div>
+                        <div class="good_options_form_right">
+                            <div class="good_options_price_wrap">
+                                <div class="good_options_price_wrap">
+                                    <input type="tel" name="new_price" />
+                                    <span>€</span>
+                                </div>
+                                <div class="good_options_price_wrap">
+                                    <span>Старая цена:</span>
+                                    <input type="tel" name="old_price" />
+                                    <span>€</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <div class="good_item_block">
+                                Изображение товара:
+                            </div>
+                            <div class="good_service_block">
+                                Изображение:
+                            </div>
+                        </div>
+                        <div class="good_options_form_right">
+                            <a href="#" class="good_file_placeholder good_options_file_foto">
+                                <img src="images/images/options-file-img.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+
+                    </div>
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_form_left">
+                        <div class="good_item_block">
+                            Доп. изобраение товара:
+                            <p class="good_red_text">(услуга платная 0.25€ )</p>
+                        </div>
+                        <div class="good_service_block">
+                            Доп. изобраение:
+                            <p class="good_red_text">(услуга платная 0.25€ )</p>
+                        </div>
+                    </div>
+                    <div class="good_options_form_right">
+                        <a href="#" class="good_file_placeholder good_options_file_foto">
+                            <img src="images/images/options-file-img.png" alt="" />
+                        </a>
+                        <a href="#" class="good_file_placeholder good_options_file_foto">
+                            <img src="images/images/options-file-img.png" alt="" />
+                        </a>
+                        <a href="#" class="good_file_placeholder good_options_file_foto">
+                            <img src="images/images/options-file-img.png" alt="" />
+                        </a>
+                        <a href="#" class="good_file_placeholder good_options_file_foto">
+                            <img src="images/images/options-file-img.png" alt="" />
+                        </a>
+                        <a href="#" class="good_file_placeholder good_options_file_foto">
+                            <img src="images/images/options-file-img.png" alt="" />
+                        </a>
+                        <a href="#" class="good_file_placeholder good_options_file_foto">
+                            <img src="images/images/options-file-img.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="good_item_block">
+
+                    <div class="good_form_row">
+                        <div class="good_options_left">
+                            <div class="good_options_form_left">
+                                <b>Цвет товара:</b>
+                            </div>
+                            <div class="good_options_form_right">
+                                <div class="good_color_list good_filter_catalog_item_color">
+                                    <label>
+                                        <input type="checkbox" name="create_color1" class="good_not_style" />
+                                        <span style="background:#000000"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color2" class="good_not_style" />
+                                        <span style="background:#662d91"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color3" class="good_not_style" />
+                                        <span style="background:#0000ff"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color4" class="good_not_style" />
+                                        <span style="background:#cccccc"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color5" class="good_not_style" />
+                                        <span style="background:#f49ac1"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color6" class="good_not_style" />
+                                        <span style="background:#f26522"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color7" class="good_not_style" />
+                                        <span style="background:#ff0000"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color8" class="good_not_style" />
+                                        <span style="background:#603913"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color9" class="good_not_style" />
+                                        <span style="background:#39b54a"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color10" class="good_not_style" />
+                                        <span style="background:#fff200"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color11" class="good_not_style" />
+                                        <span style="background:#6dcff6"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color12" class="good_not_style" />
+                                        <span style="background:#ffffff"></span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="create_color13" class="good_not_style">
+                                        <span style="background:#f4efd6"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good_options_right">
+                            Вы можете выбрать несколько цветов
+                        </div>
+                    </div>
+
+                    <div class="good_form_row">
+                        <div class="good_options_left">
+                            <div class="good_options_form_left">
+                                <b>Брэнд*:</b>
+                            </div>
+                            <div class="good_options_form_right">
+                                <input type="text" name="create_name" required="required" />
+                            </div>
+                        </div>
+                        <div class="good_options_right">
+
+                        </div>
+                    </div>
+
+                    <div class="good_form_row">
+                        <div class="good_options_left">
+                            <div class="good_options_form_left">
+                                <b>Состояние товара:</b>
+                            </div>
+                            <div class="good_options_form_right">
+                                <div class="good_options_status_wrap">
+                                    <div class="good_options_status_item">
+                                        <label>
+                                            <input type="radio" name="create_status" value="create_new" />
+                                            <span>Новое</span>
+                                        </label>
+                                    </div>
+                                    <div class="good_options_status_item">
+                                        <label>
+                                            <input type="radio" name="create_status" value="create_old" />
+                                            <span>Б/у</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good_options_right">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="good_service_block">
+
+                    <div class="good_form_row">
+                        <div class="good_options_left">
+                            <div class="good_options_form_left">
+                                <b>Город:</b>
+                            </div>
+                            <div class="good_options_form_right">
+                                <select name="create_town_select">
+                                    <option value="Рига">Рига</option>
+                                    <option value="Рига2">Рига2</option>
+                                    <option value="Рига3">Рига3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="good_options_right">
+
+                        </div>
+                    </div>
+
+                    <div class="good_form_row">
+                        <div class="good_options_left">
+                            <div class="good_options_form_left">
+                                <b>Район:</b>
+                            </div>
+                            <div class="good_options_form_right">
+                                <select name="create_department_select">
+                                    <option value="Иманта">Иманта</option>
+                                    <option value="Иманта2">Иманта2</option>
+                                    <option value="Иманта3">Иманта3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="good_options_right">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="good_form_row">
+                    <div class="good_options_left">
+                        <div class="good_options_form_left">
+                            <b>Внешняя ссылка:</b>
+                        </div>
+                        <div class="good_options_form_right">
+                            <input type="text" name="create_site" placeholder="http://" />
+                        </div>
+                    </div>
+                    <div class="good_options_right">
+                        Если у вас есть интернет магазин вы можете указать ссылку на карточку товара. В случае указания ссылки в карточке товара на данном сайте пояаится ссылка “купить в магазине”.
+                    </div>
+                </div>
+
             </form>
         </div>
+
     </div>
+
 </section>
