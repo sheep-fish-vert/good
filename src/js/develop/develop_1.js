@@ -139,6 +139,10 @@
 
     function deferredScripts(){
 
+        if($('.good_deferred .good_item').length){
+            $('.good_deferred_top').removeClass('good_hide');
+        }
+
         $(document).on('click', '.good_deferred_chose_all label', function(){
             if($(this).find('.good_checkbox').is('.checked')){
                 $('.good_deferred .good_item:not(.good_chossen)').addClass('good_chossen');

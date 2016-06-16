@@ -367,10 +367,10 @@
 
     .good_deferred{padding-top: 40px;
 
-
         .good_title{font-weight: 300;font-size: 35px;color:#010101;margin: 0 0 28px 0;}
 
         .good_deferred_top{display: flex;align-items: center;justify-content: flex-start;
+            &.good_hide{display: none;}
 
             .good_deferred_chose_all{margin-right: 33px;color:#000000;font-size: 14px;font-weight: 600;position: relative;bottom:-1px;}
             .good_checkbox{
@@ -390,6 +390,16 @@
             .good_item{width: 207px;margin-right: 33px;
                 &:nth-child(4n){margin-right: 33px;}
                 &:nth-child(5n){margin-right: 0;}
+                &:hover{
+                    .good_img{
+                        &:before{opacity: 0;}
+                    }
+                }
+                .good_img{
+                    &:hover{
+                        &:before{opacity: 1;}
+                    }
+                }
             }
             .good_img{display: block;height: 250px;
                 &:before{display:flex;align-items: center;justify-content: center;padding-top: 0;}
