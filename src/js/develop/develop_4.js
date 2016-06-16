@@ -58,11 +58,32 @@ function tabsAboutService(){
     }).eq(0).addClass('active');
 }
 
+function itemsListCheck() {
+
+    $('#score_bottom_all').on('change', function() {
+        if ( $('#good_score_checkbox_all').prop('cheked', 'true') ){
+            var option = $(this).find('option:selected').index();
+            $('.good_score_button_radio').each(function(index, el) {
+                $(el).children('label').eq(option-1).children('input[type="radio"]').prop('checked', true);
+            });
+        }
+    });
+
+    $('.good_checkbox.check_all').on('change', function() {
+        var mainInput = $(this).prop('checked');
+        $('.good_score_table_body .good_score_table_row').each(function(index, el) {
+            $(el).find('.good_score_table_cell:first-child input[type="checkbox"]').prop('checked', mainInput);
+            $('.good_score_table_cell:first-child input[type="checkbox"]').trigger('refresh');
+        });
+    });
+}
+
 $(document).ready(function(){
-    $('input:not(.good_filter_catalog_checkbox):not(.good_not_style), select:not(.good_select_has_img)').styler();
+    $('input:not(.good_filter_catalog_checkbox):not(.good_not_style):not([type="number"]), select:not(.good_select_has_img)').styler();
     massonry();
     filterCatalog();
     tabsAboutService();
+    itemsListCheck();
 });
 
 $(window).load(function(){
