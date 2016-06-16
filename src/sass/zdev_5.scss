@@ -110,3 +110,22 @@
         }
     }
 /*END trader page------------------------------------------------------*/
+/*create item------------------------------------------------------*/
+    .good_create-item{
+        .good_title{
+            h2{font:300 35px/1.26 'Open Sans'; color: #010101; margin: 0;}
+        }
+
+        .good_subtitle{
+            h5{ margin: 0;font:600 15px/1.26 'Open Sans';color: #010101;}
+        }
+        .good_content{}
+        .good_category{
+            ul{
+                li{ display: inline-block;
+                    p{ margin: 0;}
+                }
+            }
+        }
+    }
+/*END create item------------------------------------------------------*/
