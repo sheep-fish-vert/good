@@ -134,7 +134,6 @@
 
 /* /card show info */
 
-
 /* deferred scripts */
 
     function deferredScripts(){
@@ -182,6 +181,28 @@
 
 /* /deferred scripts */
 
+/* textarea sumbols */
+
+    function textareaSumbolsLeft(){
+
+        $('.good_sumbols_limit').each(function(){
+            var textareaLimit = $(this).find('textarea').attr('maxlength');
+            $(this).find('p span').text(textareaLimit);
+        });
+
+        $('.good_sumbols_limit textarea').keyup(function(event) {
+
+            var maxLength = parseInt($(this).attr('maxlength'));
+            var symbolsLeft = maxLength - $(this).val().length;
+
+            $(this).parents('.good_sumbols_limit').find('p span').text(symbolsLeft);
+
+        });
+
+    };
+
+/* /textarea sumbols */
+
 $(document).ready(function(){
 
     toggleLeftLinksSecondLevel();
@@ -190,6 +211,7 @@ $(document).ready(function(){
     cardSlider();
     cardShowInfo();
     deferredScripts();
+    textareaSumbolsLeft();
 
 });
 
