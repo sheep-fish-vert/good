@@ -367,10 +367,10 @@
 
     .good_deferred{padding-top: 40px;
 
-
         .good_title{font-weight: 300;font-size: 35px;color:#010101;margin: 0 0 28px 0;}
 
         .good_deferred_top{display: flex;align-items: center;justify-content: flex-start;
+            &.good_hide{display: none;}
 
             .good_deferred_chose_all{margin-right: 33px;color:#000000;font-size: 14px;font-weight: 600;position: relative;bottom:-1px;}
             .good_checkbox{
@@ -390,6 +390,16 @@
             .good_item{width: 207px;margin-right: 33px;
                 &:nth-child(4n){margin-right: 33px;}
                 &:nth-child(5n){margin-right: 0;}
+                &:hover{
+                    .good_img{
+                        &:before{opacity: 0;}
+                    }
+                }
+                .good_img{
+                    &:hover{
+                        &:before{opacity: 1;}
+                    }
+                }
             }
             .good_img{display: block;height: 250px;
                 &:before{display:flex;align-items: center;justify-content: center;padding-top: 0;}
@@ -399,3 +409,72 @@
     }
 
 /* /deferrred */
+
+/* options form */
+
+    .good_options{
+
+        .good_options_descript{margin-bottom: 40px;
+            .good_options_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;line-height: 1.5;
+                .good_options_left{width: calc(100% - 500px);font-weight: 300;font-size: 15px;color:#000000;}
+                .good_options_right{width: 495px;display: flex;justify-content: flex-end;align-items: flex-start;
+                    .good_options_link{width: 165px;
+                        a{color:#010101;font-weight: 600;transition:color 300ms ease;
+                            &:hover{color:#ff0000;}
+                        }
+                    }
+                }
+            }
+        }
+
+        .good_form_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;margin-bottom: 30px;
+            &:last-child{padding-top: 20px;}
+            .good_options_left{width: calc(100% - 500px);color:#010101;font-size: 15px;display: flex;align-items: flex-start;justify-content: space-between;
+                b{font-weight: 600;}
+
+                .good_options_form_left{width: 160px;line-height: 1.55;}
+                .good_options_form_right{width: calc(100% - 185px);display: flex;justify-content: space-between;align-items: center;font-weight: 300;color:#010101;line-height: 1.55;
+                    input{width: 100%;border:1px solid #d1d1d1;height: 36px;padding:0 12px;font-weight: 300;color:#000;font-size: 14px;
+                        &.error{border-color:#ff0000;}
+                    }
+                }
+
+            }
+            .good_options_right{width: 495px;}
+
+
+            .good_options_textarea_wrap{width: 100%;position: relative;
+                textarea{width:100%;height:122px;resize:none;padding:10px 10px 25px 10px;}
+                p{margin: 0;position: absolute;right: 20px;bottom:8px;}
+            }
+
+            .good_options_form_small_left{width: 80px;font-weight: 400;}
+            .good_options_form_small_right{width: calc(100% - 90px);
+                .jq-selectbox{width: 100%;}
+            }
+
+        }
+
+        .good_options_submit_wrap{width: 100%;
+            .good_button{min-width:133px;padding:7px 13px 8px 15px;}
+        }
+
+    }
+
+/* /options form */
+
+/* file placeholder */
+
+    .good_file_placeholder{display: block;background-color: #ebebeb;border:2px dashed #d7d7d7;display: flex;justify-content: center;align-items: center;flex-direction:column;text-decoration: none;transition:background-color 300ms ease;
+
+        &.good_options_file_foto{width: 93px;height: 93px;}
+        &.good_options_file_fon{min-width: 122px;height: 122px;width: 100%;}
+        &:hover{background-color: #b2b2b2;
+            .good_options_file_text{color:#fff;}
+        }
+
+        .good_options_file_text{font-weight: 300;color:#010101;font-size: 13px;line-height: 1.6;display: inline-block;padding-top: 5px;transition:color 300ms ease;}
+
+    }
+
+/* /file placeholder */

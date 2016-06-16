@@ -192,8 +192,8 @@ function popNext(popupId, popupWrap){
 
 /*маска на инпуте*/
 function Maskedinput(){
-    if($('.tel-mask')){
-        $('.tel-mask').mask('+9 (999) 999-99-99 ');
+    if($('.good_tel_mask')){
+        $('.good_tel_mask').mask('+7 999 9999999');
     }
 }
 
@@ -263,13 +263,48 @@ function someAjax(item, someUrl, successFunc, someData){
 
 */
 
+/* deferred ajax */
+
+    function deferredScriptAjax(){
+
+        var leftItems = [];
+
+        $(document).on('click', '.good_deferred_remove_chosen .good_button', function(){
+
+            $('.good_deferred .good_chossen').remove();
+
+            if($('.good_deferred .good_item').length == 0){
+                $('.good_deferred_top').addClass('good_hide');
+            }
+
+            $('.good_deferred .good_item').each(function(index){
+
+                leftItems[index] = $(this).find('input').attr('name');
+
+            });
+
+            $.ajax({
+                url:'ajax.php',
+                data:{action:'deferred_items_left', items:leftItems},
+                method:'POST'
+            })
+
+        });
+
+    };
+
+/* /deferred ajax */
+
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.good_search_form');
    validate('.good_options_change_pass form');
+   validate('.good_options_form_main');
 
    Maskedinput();
    fancyboxForm();
+
+   deferredScriptAjax();
 
 });

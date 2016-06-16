@@ -134,6 +134,75 @@
 
 /* /card show info */
 
+/* deferred scripts */
+
+    function deferredScripts(){
+
+        if($('.good_deferred .good_item').length){
+            $('.good_deferred_top').removeClass('good_hide');
+        }
+
+        $(document).on('click', '.good_deferred_chose_all label', function(){
+            if($(this).find('.good_checkbox').is('.checked')){
+                $('.good_deferred .good_item:not(.good_chossen)').addClass('good_chossen');
+                $('.good_deferred .good_name .good_checkbox:not(.checked) input').prop('checked', true);
+                $('.good_deferred .good_name .good_checkbox:not(.checked)').addClass('checked');
+            }else{
+                $('.good_deferred .good_item.good_chossen').removeClass('good_chossen');
+                $('.good_deferred .good_name .good_checkbox.checked input').prop('checked', false);
+                $('.good_deferred .good_name .good_checkbox.checked').removeClass('checked');
+            }
+
+        });
+
+        $(document).on('click', '.good_deferred .good_other-items .good_checkbox', function(){
+
+            if($(this).is('.checked')){
+                $(this).parents('.good_item').addClass('good_chossen');
+            }else{
+                $(this).parents('.good_item').removeClass('good_chossen');
+            }
+
+            if($('.good_deferred .good_item').length == $('.good_deferred .good_item.good_chossen').length && !$('.good_deferred_chose_all .good_checkbox').is('.checked')){
+
+                $('.good_deferred_chose_all .good_checkbox').addClass('checked');
+                $('.good_deferred_chose_all .good_checkbox input').prop('checked', true);
+
+            }else if($('.good_deferred .good_item').length != $('.good_deferred good_item .good_item.good_chossen').length && $('.good_deferred_chose_all .good_checkbox').is('.checked')){
+
+                $('.good_deferred_chose_all .good_checkbox').removeClass('checked');
+                $('.good_deferred_chose_all .good_checkbox input').prop('checked', false);
+
+            }
+
+        });
+
+    }
+
+/* /deferred scripts */
+
+/* textarea sumbols */
+
+    function textareaSumbolsLeft(){
+
+        $('.good_sumbols_limit').each(function(){
+            var textareaLimit = $(this).find('textarea').attr('maxlength');
+            $(this).find('p span').text(textareaLimit);
+        });
+
+        $('.good_sumbols_limit textarea').keyup(function(event) {
+
+            var maxLength = parseInt($(this).attr('maxlength'));
+            var symbolsLeft = maxLength - $(this).val().length;
+
+            $(this).parents('.good_sumbols_limit').find('p span').text(symbolsLeft);
+
+        });
+
+    };
+
+/* /textarea sumbols */
+
 $(document).ready(function(){
 
     toggleLeftLinksSecondLevel();
@@ -141,6 +210,8 @@ $(document).ready(function(){
     submitFormByChange();
     cardSlider();
     cardShowInfo();
+    deferredScripts();
+    textareaSumbolsLeft();
 
 });
 
