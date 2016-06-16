@@ -1,4 +1,5 @@
 <section class="good_options">
+
     <div class="good_mbox">
 
         <div class="good_options_descript">
@@ -45,7 +46,7 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Эл. почта*
+                            <b>Эл. почта*</b>
                         </div>
                         <div class="good_options_form_right">
                             <input type="email" name="options_email" placeholder="my_male@yandex.ru" required="required" />
@@ -58,7 +59,7 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Телефон:
+                            <b>Телефон:</b>
                         </div>
                         <div class="good_options_form_right">
                             <input type="tel" name="options_tel" placeholder="+7 981 7514534" class="good_tel_mask" />
@@ -71,7 +72,7 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Skype:
+                            <b>Skype:</b>
                         </div>
                         <div class="good_options_form_right">
                             <input type="text" name="options_skype">
@@ -84,10 +85,12 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Фото продавца:
+                            <b>Фото продавца:</b>
                         </div>
                         <div class="good_options_form_right">
-                            <input type="file" name="options_foto" class="good_options_file_foto" />
+                            <a href="#" class="good_file_placeholder good_options_file_foto">
+                                <img src="images/options-file-img.png" alt="" />
+                            </a>
                         </div>
                     </div>
                     <div class="good_options_right">
@@ -97,10 +100,13 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Фоновое изображение:
+                            <b>Фоновое изображение:</b>
                         </div>
                         <div class="good_options_form_right">
-                            <input type="file" name="options_fon" class="good_options_file_fon" />
+                            <a href="#" class="good_file_placeholder good_options_file_fon">
+                                <img src="images/options-file-img.png" alt="" />
+                                <span class="good_options_file_text">Добавте фото</span>
+                            </a>
                         </div>
                     </div>
                     <div class="good_options_right">
@@ -110,7 +116,7 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Условие покупки:
+                            <b>Условие покупки:</b>
                         </div>
                         <div class="good_options_form_right">
                             <div class="options_textarea_wrap">
@@ -126,7 +132,7 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Условия возврата:
+                            <b>Условия возврата:</b>
                         </div>
                         <div class="good_options_form_right">
                             <div class="options_textarea_wrap">
@@ -142,7 +148,7 @@
                 <div class="good_form_row">
                     <div class="good_options_left">
                         <div class="good_options_form_left">
-                            Способы оплаты:
+                            <b>Способы оплаты:</b>
                         </div>
                         <div class="good_options_form_right">
                             <div class="options_textarea_wrap">
@@ -157,9 +163,16 @@
                 </div>
                 <div class="good_form_row">
                     <div class="good_options_left">
-                        <div class="good_options_form_left">Условие доставки:</div>
+                        <div class="good_options_form_left">
+                            <b>Условие доставки:</b>
+                        </div>
                         <div class="good_options_form_right">
-                            <input type="checkbox" name="options_delivery_conditions" />
+                            <div class="good_options_delivery_conditions">
+                                <label>
+                                    <input type="checkbox" name="options_delivery_conditions" class="good_checkbox" />
+                                    <span>Лично</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="good_options_right">
@@ -192,6 +205,11 @@
                         </div>
                     </div>
                     <div class="good_options_right">
+
+                    </div>
+                </div>
+                <div class="good_form_row">
+                    <div class="good_options_left">
                         <div class="good_options_form_left"></div>
                         <div class="good_options_form_right">
                             <div class="good_options_form_small_left">
@@ -202,6 +220,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="good_options_right"></div>
                 </div>
                 <div class="good_form_row">
                     <div class="good_options_left">
@@ -224,7 +243,7 @@
                         <div class="good_options_form_left"></div>
                         <div class="good_options_form_right">
                             <label>
-                                <input type="checkbox" name="options_delivery_mail" />
+                                <input type="checkbox" name="options_delivery_mail" class="good_checkbox" />
                                 <span>По почте</span>
                             </label>
                         </div>
@@ -248,7 +267,7 @@
                     <div class="good_options_left">
                         <div class="good_options_form_left"></div>
                         <div class="good_options_form_right">
-                            <input type="text" name="options_delivery_place" />
+                            <input type="text" name="options_delivery_place" class="good_checkbox" />
                         </div>
                     </div>
                     <div class="good_options_right">
@@ -260,7 +279,7 @@
                         <div class="good_options_form_left">Facebook:</div>
                         <div class="good_options_form_right">
                             <label>
-                                <input type="checkbox" name="options_add_facebook" />
+                                <input type="checkbox" name="options_add_facebook" class="good_checkbox" />
                                 <span>Подключить виджет сообщества из Facebook</span>
                             </label>
                         </div>
@@ -274,7 +293,7 @@
                         <div class="good_options_form_left">Instagram:</div>
                         <div class="good_options_form_right">
                             <label>
-                                <input type="checkbox" name="options_add_instagram" />
+                                <input type="checkbox" name="options_add_instagram" class="good_checkbox" />
                                 <span>Подключить виджет Instagram</span>
                             </label>
                         </div>
@@ -283,9 +302,11 @@
                 </div>
                 <div class="good_form_row">
                     <div class="good_options_left">
-                        <button class="good_button" type="submit">
-                            <span>Сохранить</span>
-                        </button>
+                        <div class="good_options_submit_wrap">
+                            <button class="good_button" type="submit">
+                                <span>Сохранить</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="good_options_right"></div>
                 </div>
@@ -293,4 +314,5 @@
         </div>
 
     </div>
+
 </section>

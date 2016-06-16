@@ -300,6 +300,7 @@ $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.good_search_form');
    validate('.good_options_change_pass form');
+   validate('.good_options_form_main');
 
    Maskedinput();
    fancyboxForm();

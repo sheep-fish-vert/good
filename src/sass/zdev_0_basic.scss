@@ -72,10 +72,18 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 .good_footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;}
 
 input, textarea{
-    &::-webkit-input-placeholder {color:#212121;}
-    &:-moz-placeholder {color:#212121;opacity:1;}
-    &::-moz-placeholder {color:#212121;opacity:1;}
-    &:-ms-input-placeholder {color:#212121;}
+    &::-webkit-input-placeholder {color:#010101;font-family: 'Open Sans', sans-serif;font-weight: 300;font-size: 14px;transition:color 300ms ease;}
+    &:-moz-placeholder {color:#010101;opacity:1;font-family: 'Open Sans', sans-serif;font-weight: 300;font-size: 14px;transition:color 300ms ease;}
+    &::-moz-placeholder {color:#010101;opacity:1;font-family: 'Open Sans', sans-serif;font-weight: 300;font-size: 14px;transition:color 300ms ease;}
+    &:-ms-input-placeholder {color:#010101;font-family: 'Open Sans', sans-serif;font-weight: 300;font-size: 14px;transition:color 300ms ease;}
+
+    &.error{
+        &::-webkit-input-placeholder {color:#ff0000;}
+        &:-moz-placeholder {color:#ff0000;opacity:1;}
+        &::-moz-placeholder {color:#ff0000;opacity:1;}
+        &:-ms-input-placeholder {color:#ff0000;}
+    }
+
 }
 
 /*End Layout*/
