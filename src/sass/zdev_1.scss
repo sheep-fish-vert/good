@@ -145,6 +145,10 @@
                 .jq-selectbox__select{padding:0 20px 0 10px;border:none;background:none;box-shadow:none;}
                 .jq-selectbox__trigger{width: 20px;border:none;}
                 .jq-selectbox__trigger-arrow{border-top:5px solid #000;right:calc(50% - 5px);}
+                li{
+                    &:hover{background-color: rgba(255, 0, 0, 0.29);}
+                    &.sel{background-color: #a3abb1;color:#fff;}
+                }
             }
         }
 
@@ -177,7 +181,10 @@
         .jq-selectbox__select{background:none;border:none;box-shadow:none;padding:0 20px 0 10px;}
         .jq-selectbox__trigger{width: 20px;border-left:none;}
         .jq-selectbox__trigger-arrow{border-top:5px solid #000;left:calc(50% - 5px);}
-        li.sel{background-color: #a3abb1;}
+        li{
+            &:hover{background-color:rgba(255, 0, 0, 0.29);}
+            &.sel{background-color: #a3abb1;}
+        }
     }
 
 /* /good_select_has_img */
@@ -355,3 +362,40 @@
     }
 
 /* /cards */
+
+/* deferred */
+
+    .good_deferred{padding-top: 40px;
+
+
+        .good_title{font-weight: 300;font-size: 35px;color:#010101;margin: 0 0 28px 0;}
+
+        .good_deferred_top{display: flex;align-items: center;justify-content: flex-start;
+
+            .good_deferred_chose_all{margin-right: 33px;color:#000000;font-size: 14px;font-weight: 600;position: relative;bottom:-1px;}
+            .good_checkbox{
+                &.jq-checkbox{top:-2px;margin-right: 8px;}
+            }
+
+            .good_deferred_remove_chosen{
+                .good_button{min-width: 194px;padding:7px 13px 8px 15px;}
+            }
+
+        }
+
+        .good_other-items{
+
+            .good_items-wrap{padding-top: 40px;}
+
+            .good_item{width: 207px;margin-right: 33px;
+                &:nth-child(4n){margin-right: 33px;}
+                &:nth-child(5n){margin-right: 0;}
+            }
+            .good_img{display: block;height: 250px;
+                &:before{display:flex;align-items: center;justify-content: center;padding-top: 0;}
+            }
+        }
+
+    }
+
+/* /deferrred */
