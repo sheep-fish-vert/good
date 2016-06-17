@@ -196,12 +196,13 @@
 /* catalog-items */
 
     .good_other-items{
-        &.good_catalog-items{padding-top: 17px;
+        &.good_catalog-items{padding-top: 19px;
             .good_item{margin-bottom: 43px;width: 200px;margin-right:36px;
                 &:nth-child(4n){margin-right: 0px;}
                 .good_img{height: 297px;overflow: hidden;
                     img{max-width: none;min-width: 100%;min-height: 100%;}
                 }
+                .good_txt{padding:16px 10px 0;}
             }
         }
     }
@@ -210,12 +211,12 @@
 
 /* cards */
 
-    .good_card{padding-top: 40px;
+    .good_card{padding-top: 33px;padding-bottom: 29px;
         .good_mbox{display: flex;align-items: flex-start;justify-content: space-between;
 
-            .good_left{width: calc(100% - 620px);
+            .good_left{width: calc(100% - 634px);
 
-                .good_slider_wrap{display: flex;align-items: flex-start;justify-content: space-between;margin-bottom: 15px;
+                .good_slider_wrap{display: flex;align-items: flex-start;justify-content: space-between;margin-bottom: -2px;
                     .good_slider_big{width: calc(100% - 75px);margin-bottom: 0;}
                     .good_slider_small{width: 70px;margin-bottom: 0;
                         .good_slider_small_img{width: 70px;height: 85px;overflow:hidden;position: relative;border:1px solid transparent;margin-bottom: 3px;
@@ -225,21 +226,21 @@
                     }
                 }
 
-                .good_slider_bottom_info{color:#000;font-weight: 300;font-size: 12px;line-height: 1.5;margin-bottom: 25px;
+                .good_slider_bottom_info{color:#000;font-weight: 300;font-size: 12px;line-height: 1.6;letter-spacing: .66px;margin-bottom: 35px;
                     p{margin: 0;}
                 }
 
-                .good_share{display: flex;align-items: center;justify-content: flex-start;margin-bottom: 35px;
-                    .good_share_text{font-weight: 600;font-size: 15px;color:#010101;margin-right: 5px;}
+                .good_share{display: flex;align-items: center;justify-content: flex-start;margin-bottom: 33px;
+                    .good_share_text{font-weight: 600;font-size: 15px;color:#010101;margin-right: 8px;letter-spacing: 0.5px;}
                     .good_share_socials{
-                        a{text-decoration: none;display: inline-block;margin: 0 5px;transition:opacity 300ms ease;
+                        a{text-decoration: none;display: inline-block;margin: 0 4px;transition:opacity 300ms ease;
                             &:hover{opacity: .5;}
                         }
                     }
                 }
 
-                .good_card_left_descript{color:#010101;font-size: 15px;margin-bottom: 30px;font-weight: 300;
-                    p{margin:0 0 10px 0;line-height: 1.66;
+                .good_card_left_descript{color:#010101;font-size: 15px;margin-bottom: 33px;font-weight: 300;letter-spacing: .8px;
+                    p{margin:0 0 7px 0;line-height: 1.66;
                         b{font-weight: 600;}
                     }
                 }
@@ -250,23 +251,24 @@
 
             }
 
-            .good_right{width: 585px;margin-right: -35px;
+            .good_right{width: 585px;margin-right: -54px;padding-top: 4px;
 
-                .good_card_title{text-align: center;margin-bottom: 20px;
+                .good_card_title{text-align: center;margin-bottom: 15px;
                     p, h2{margin: 0;font-weight: 300;font-size: 35px;line-height: 1.35;}
+                    p{margin-bottom:-7px;}
                 }
-                .good_card_price{text-align: center;color:#000;font-size: 25px;font-weight: 600;margin-bottom: 50px;
+                .good_card_price{text-align: center;color:#000;font-size: 25px;font-weight: 600;margin-bottom: 52px;
                     span{font-weight: 300;padding:0 5px;position: relative;display: inline-block;margin-right: 5px;
                         &:before{content:'';display: block;position: absolute;width: 100%;height: 1px;background-color: #000000;left:0;top:50%;}
                     }
                 }
 
-                .good_card_trader_info{display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 20px;
+                .good_card_trader_info{display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 25px;
                     .good_card_trader_foto{width: 93px;height: 93px;position: relative;overflow: hidden;
                         &:before{content:attr(data-text);position: absolute;top:0;left:0;width: 100%;height: 100%;background-color: #dedede;display: flex;align-items: center;justify-content: center;color:#fff;font-size: 14px;font-weight: 600;}
                     }
-                    .good_card_trader_center{color:#010101;font-size: 15px;
-                        p{margin: 0 0 10px 0;
+                    .good_card_trader_center{color:#010101;font-size: 15px;padding-top: 7px;letter-spacing: 0.3px;
+                        p{margin: 0 0 15px 0;
                             &:last-child{margin-bottom: 0;}
                             b{font-weight: 600;}
 
@@ -276,8 +278,8 @@
 
                         }
                     }
-                    .good_card_trader_right{color:#010101;
-                        .good_card_trader_right_row{display: flex;align-items: center;margin-bottom: 10px;
+                    .good_card_trader_right{color:#010101;padding-top: 6px;
+                        .good_card_trader_right_row{display: flex;align-items: center;margin-bottom: 14px;
                             &:last-child{margin-bottom: 10px;}
                             .good_card_trader_right_text{font-weight: 600;font-size: 15px;padding-right: 5px;position: relative;z-index: 0;
                                 span{position: absolute;left: 100%;display: inline-block;top:0px;cursor: pointer;text-decoration: underline;font-weight: 300;}
@@ -302,25 +304,26 @@
                 }
 
                 .good_card_trader_connect{
-                    p{margin: 0;color:#010101;font-size: 15px;font-weight: 300;margin-bottom: 25px;
+                    p{margin: 0;color:#010101;font-size: 15px;font-weight: 300;margin-bottom: 25px;letter-spacing:0.8px;
                         b{font-weight: 600;}
                     }
-                    .good_connect_button_wrap{margin-bottom: 55px;
+                    .good_connect_button_wrap{margin-bottom: 58px;
                         .good_button{min-width: 184px;padding:7px 13px 8px 15px;}
                     }
                 }
 
-                .good_card_item_info{margin-bottom: 10px;display: flex;justify-content: space-between;align-items: flex-start;
-                    .good_card_item_info_left{width: 220px;padding-right: 5px;
-                        p{margin: 0 0 10px 0;font-size: 15px;font-weight: 300;
+                .good_card_item_info{margin-bottom: 16px;display: flex;justify-content: space-between;align-items: flex-start;
+                    .good_card_item_info_left{width: 220px;padding-right: 5px;letter-spacing: 0.3px;
+                        p{margin: 0 0 15px 0;font-size: 15px;font-weight: 300;
                             b{font-weight: 600;}
                             &:last-child{margin: 0;}
                         }
                     }
                     .good_card_item_info_right{width: calc(100% - 220px);
-                        .good_card_item_info_right_row{display: flex;align-items: flex-start; justify-content: flex-start;flex-wrap: wrap;margin-bottom: 10px;
+                        .good_card_item_info_right_row{display: flex;align-items: flex-start; justify-content: flex-start;flex-wrap: wrap;margin-bottom: 25px;
                             .good_card_item_info_right_col{width: 50%;
                                 p{margin: 0;font-weight: 600;font-size: 15px;color:#010101;}
+                                .good_card_item_info_select{width: 130px;}
                             }
                             &:last-child{margin-bottom: 10px;}
                         }
@@ -332,11 +335,11 @@
                     }
                 }
 
-                .good_card_descript{padding-top: 40px;margin-bottom: 50px;
+                .good_card_descript{padding-top: 42px;margin-bottom: 50px;letter-spacing:0.8px;
                     .good_card_descript_item{margin-bottom: 40px;font-size: 15px;color:#010101;font-weight: 300;line-height: 1.66;
                         &:last-child{margin-bottom: 0;}
 
-                        p{margin: 0 0 10px 0;
+                        p{margin: 0 0 6px 0;
                             b{font-weight: 600;}
                             &:last-child{margin-bottom: 0;}
                         }
@@ -344,15 +347,15 @@
                     }
                 }
 
-                .good_card_buttons{margin-bottom: 45px;
+                .good_card_buttons{margin-bottom: 41px;
                     .good_button{padding:7px 13px 8px 15px;min-width: 147px;margin-right: 16px;
                         img{margin-right: 3px;}
                         &.good_black{min-width: 180px;margin-right: 0;}
                     }
                 }
 
-                .good_card_right_bottom{font-size: 15px;font-weight: 300;
-                    p{margin: 0 0 10px 0;line-height: 1.66;
+                .good_card_right_bottom{font-size: 15px;font-weight: 300;letter-spacing:0.8px;
+                    p{margin: 0 0 6px 0;line-height: 1.66;
                         b{font-weight: 600;}
                         a{color:#010101;transition:color 300ms ease;
                             &:hover{color:#ff0000;}
@@ -371,14 +374,14 @@
 
     .good_deferred{padding-top: 40px;
 
-        .good_title{font-weight: 300;font-size: 35px;color:#010101;margin: 0 0 28px 0;}
+        .good_title{font-weight: 300;font-size: 35px;color:#010101;letter-spacing:0.8px;margin: 0 0 31px 0;}
 
         .good_deferred_top{display: flex;align-items: center;justify-content: flex-start;
             &.good_hide{display: none;}
 
-            .good_deferred_chose_all{margin-right: 33px;color:#000000;font-size: 14px;font-weight: 600;position: relative;bottom:-1px;}
+            .good_deferred_chose_all{margin-right: 33px;color:#000000;font-size: 14px;font-weight: 600;position: relative;bottom:-1px;letter-spacing: 0.8px;}
             .good_checkbox{
-                &.jq-checkbox{top:-2px;margin-right: 8px;}
+                &.jq-checkbox{top:-2px;margin-right: 9px;}
             }
 
             .good_deferred_remove_chosen{
@@ -404,6 +407,8 @@
                         &:before{opacity: 1;}
                     }
                 }
+                .good_txt{padding:16px 0 0 0;}
+                .good_name{margin-bottom: 10px;}
             }
             .good_img{display: block;height: 250px;
                 &:before{display:flex;align-items: center;justify-content: center;padding-top: 0;}
@@ -416,10 +421,10 @@
 
 /* options form */
 
-    .good_options{
+    .good_options{margin-top: -7px;
 
-        .good_options_descript{margin-bottom: 40px;
-            .good_options_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;line-height: 1.5;
+        .good_options_descript{margin-bottom: 46px;letter-spacing: 0.8px;
+            .good_options_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;line-height: 1.6;letter-spacing:0.8px;
                 .good_options_left{width: calc(100% - 500px);font-weight: 300;font-size: 15px;color:#000000;}
                 .good_options_right{width: 495px;display: flex;justify-content: flex-end;align-items: flex-start;
                     .good_options_link{width: 165px;
@@ -431,14 +436,14 @@
             }
         }
 
-        .good_form_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;margin-bottom: 30px;
+        .good_form_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;margin-bottom: 25px;
             &:last-child{padding-top: 20px;}
             .good_options_left{width: calc(100% - 500px);color:#010101;font-size: 15px;display: flex;align-items: flex-start;justify-content: space-between;
                 &.good_no_flex{display: block;}
                 b{font-weight: 600;}
 
-                .good_options_form_left{width: 160px;line-height: 1.55;}
-                .good_options_form_right{width: calc(100% - 185px);display: flex;justify-content: space-between;align-items: center;font-weight: 300;color:#010101;line-height: 1.55;
+                .good_options_form_left{width: 160px;line-height: 1.6;letter-spacing: 0.8px;}
+                .good_options_form_right{width: calc(100% - 185px);display: flex;justify-content: space-between;align-items: center;font-weight: 300;color:#010101;line-height: 1.6;letter-spacing: 0.8px;
                     input{width: 100%;border:1px solid #d1d1d1;height: 36px;padding:0 12px;font-weight: 300;color:#000;font-size: 14px;
                         &.error{border-color:#ff0000;}
                     }
@@ -564,7 +569,7 @@
 
         .good_form_input_site{position: relative;
             &:before{content:'http://';display: block;position: absolute;left: 13px;top:7px;}
-            input{padding:0 12px 0 55px!important;}
+            input{padding:0 12px 0 61px!important;}
         }
 
         .good_service_select{
