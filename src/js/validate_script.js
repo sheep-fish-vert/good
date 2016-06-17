@@ -195,6 +195,9 @@ function Maskedinput(){
     if($('.good_tel_mask')){
         $('.good_tel_mask').mask('+7 999 9999999');
     }
+    if($('.good_time_mask')){
+        $('.good_time_mask').mask('с 99:99 по 99:99')
+    }
 }
 
 /*fansybox на форме*/
