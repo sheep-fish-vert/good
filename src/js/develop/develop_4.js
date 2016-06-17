@@ -80,13 +80,15 @@ function itemsListCheck() {
 
 $(document).ready(function(){
     $('input:not(.good_filter_catalog_checkbox):not(.good_not_style):not([type="number"]), select:not(.good_select_has_img)').styler();
-    massonry();
+
     filterCatalog();
     tabsAboutService();
     itemsListCheck();
 });
 
 $(window).load(function(){
+
+    massonry();
 
 });
 
