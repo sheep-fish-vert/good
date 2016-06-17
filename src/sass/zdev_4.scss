@@ -18,24 +18,26 @@
     }
 }
 // fliter top catalog
-.good_filter_catalog{margin-bottom: 37px;padding-top: 37px;
-    .good_filter_catalog_row{display: flex;align-items: center;justify-content: space-between;margin-bottom: 30px;
+.good_filter_catalog{margin-bottom: 0px;padding-top: 37px;
+    .good_filter_catalog_row{display: flex;align-items: center;justify-content: space-between;margin-bottom: 34px;
         &.next{align-items: flex-start;margin-bottom: 0;justify-content: flex-start;
             .good_filter_catalog_item{margin-right: 29px;
                 &:last-child{margin-right: 0;}
             }
             .good_filter_catalog_title{min-width: auto;}
         }
-        .good_filter_catalog_radio_button{display: flex;align-items: center;color: #000000;font-size: 13px;font-weight: 300;}
-        .good_filter_catalog_title{font-weight: bold;font-size: 15px;color: #010101;margin-right: 14px;}
+        .good_filter_catalog_radio_button{display: flex;align-items: center;color: #000000;font-size: 13px;font-weight: 300;
+            &:nth-child(2){padding-right: 34px;}
+        }
+        .good_filter_catalog_title{font-weight: bold;font-size: 15px;color: #010101;margin-right: 13px;}
         .good_filter_catalog_radio{
-            label{margin: 0 5px;}
+            label{margin: 0 8px;}
         }
         // 2-th row
         .good_filter_catalog_item_wrap{position: relative;}
         .good_filter_catalog_item_subtitl{font-weight: 600;font-size: 15px;margin-bottom: 20px;color: #010101;}
         .good_filter_catalog_item{display: flex;flex-direction:column;min-width: 128px;position: relative;
-            .good_filter_catalog_price_range_wrap{width: 90px;margin:0 auto 10px;position: relative;cursor: pointer;}
+            .good_filter_catalog_price_range_wrap{width: 90px;margin:4px auto 10px;position: relative;cursor: pointer;}
             .noUi-horizontal{height: 4px;background-color: #e0e0e0;border-radius: 0;box-shadow: none;border:none;
                 &:after{position: absolute;top: 0;height: 100%;left: -5px;width: 10px;content: '';    background-color: #e0e0e0;}
                 .noUi-handle{width: 5px;height: 10px;background:#000;border:none;box-shadow: none;border-radius: 0;top: 0px;top: -3px;
