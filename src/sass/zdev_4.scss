@@ -18,13 +18,13 @@
     }
 }
 // fliter top catalog
-.good_filter_catalog{margin-bottom: 0px;padding-top: 37px;
+.good_filter_catalog{margin-bottom: 2px;padding-top: 31px;
     .good_filter_catalog_row{display: flex;align-items: center;justify-content: space-between;margin-bottom: 34px;
         &.next{align-items: flex-start;margin-bottom: 0;justify-content: flex-start;
             .good_filter_catalog_item{margin-right: 29px;
                 &:last-child{margin-right: 0;}
             }
-            .good_filter_catalog_title{min-width: auto;}
+            .good_filter_catalog_title{min-width: auto;margin-right: 35px;}
         }
         .good_filter_catalog_radio_button{display: flex;align-items: center;color: #000000;font-size: 13px;font-weight: 300;
             &:nth-child(2){padding-right: 34px;}
@@ -90,8 +90,10 @@
 }
 
 // good_center_tab
-.good_center_tab{margin-bottom: 40px;
-    .good_center_tab_title{font-family: "Open Sans";font-weight: 300;font-size: 35px;color: #010101;margin: 30px 0px;}
+.good_center_tab{margin-bottom: 42px;
+    .good_center_tab_title{font-family: "Open Sans";font-weight: 300;font-size: 35px;color: #010101;letter-spacing: 1px;
+        p{margin: 34px 0px 29px;}
+    }
     .good_center_tab_list{position: relative;overflow: hidden;
         &:after{position: absolute;background-color: #d7d7d7;width: 100%;bottom: 0;left: 0;height: 1px;content: '';}
         ul{list-style-type: none;padding: 0;margin: 0;display: flex;position: relative;z-index: 2;}
@@ -99,7 +101,7 @@
             &:last-child{border-right:1px solid #d7d7d7;}
             &.active{border-bottom: none;}
         }
-        a{height: 36px;padding: 0 13px;display: flex;align-items: center;justify-content: center;font-size: 15px;font-weight: bold;color: #010101;text-decoration: none;}
+        a{height: 35px;padding: 0 13px;display: flex;align-items: center;justify-content: center;font-size: 15px;font-weight: bold;color: #010101;text-decoration: none;letter-spacing: 0.6px;}
     }
 }
 
@@ -116,9 +118,9 @@
             img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);max-width: none;min-height: 100%;min-width: 100%;border-radius: 50%;overflow: hidden;}
         }
         .good_customer_reviews_button{opacity: 0;transition: all ease .2s;}
-        .good_customer_reviews_description{width: calc(100% - 97px);padding-left: 18px;display: flex;flex-direction:column;
+        .good_customer_reviews_description{width: calc(100% - 97px);padding-left: 20px;display: flex;flex-direction:column;
             &>.good_row{margin-bottom: 10px;}
-            .good_customer_reviews_name{margin-bottom: 15px;padding-top: 4px;
+            .good_customer_reviews_name{margin-bottom: 15px;padding-top: 6px;    letter-spacing: 0.8px;
                 b{font-weight: 600;font-size: 15px;color: #010101;}
             }
             .good_customer_reviews_text{font-size: 15px;color: rgb(0, 0, 0);line-height: 1.667;margin-bottom: 20px;
