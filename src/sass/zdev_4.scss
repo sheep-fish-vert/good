@@ -107,7 +107,7 @@
 
 // options  -  Rewievs page
 .good_customer_reviews{
-    .good_mbox{border-bottom: 1px solid #eeeeee;}
+    .good_mbox{}
     .good_customer_reviews_wrap{margin-bottom: 30px;}
     .good_row{display: flex;flex-wrap: wrap;margin-bottom: 20px;
         &:last-child{margin-bottom: 0;}
@@ -119,16 +119,16 @@
         }
         .good_customer_reviews_button{opacity: 0;transition: all ease .2s;}
         .good_customer_reviews_description{width: calc(100% - 97px);padding-left: 20px;display: flex;flex-direction:column;
-            &>.good_row{margin-bottom: 10px;}
-            .good_customer_reviews_name{margin-bottom: 15px;padding-top: 6px;    letter-spacing: 0.8px;
+            &>.good_row{margin-bottom: 10px;padding-top: 14px;}
+            .good_customer_reviews_name{margin-bottom: 23px;padding-top: 6px;    letter-spacing: 0.8px;
                 b{font-weight: 600;font-size: 15px;color: #010101;}
             }
             .good_customer_reviews_text{font-size: 15px;color: rgb(0, 0, 0);line-height: 1.667;margin-bottom: 20px;
                 p{margin: 0;}
             }
             .good_customer_reviews_rating{display: flex;margin-bottom: 33px;
-                .good_customer_reviews_rating_item{display: flex;align-items: center;margin-right: 40px;
-                    b{font-weight: 600;font-size: 15px;color: #010101;margin-right: 8px;}
+                .good_customer_reviews_rating_item{display: flex;align-items: center;margin-right: 45px;
+                    b{font-weight: 600;font-size: 15px;color: #010101;margin-right: 10px;    letter-spacing: 0.7px;}
                 }
                 .good_customer_reviews_rating_item_star{display: flex;
                     .good_star{width: 18px;height: 16px;background:transparent url('../images/good_customer_reviews_rating_item_star.png') right top no-repeat;overflow: hidden;
@@ -141,17 +141,17 @@
 }
 
 //good_options_change_pass page
-.good_options_change_pass{
+.good_options_change_pass{padding-top: 3px;
     .good_form_row{display: flex;align-items: center;margin-bottom: 14px;
         &.error{
             input{border-color: red !important}
         }
-        .good_item_left{width: 207px;padding-right: 10px;font-size: 15px;font-weight: 300;}
-        .good_item_right{width: 216px;
-            input{border:1px solid #d1d1d1;padding: 0 10px;height: 29px;font-weight: 300;}
+        .good_item_left{width: 207px;padding-right: 10px;font-size: 15px;font-weight: 300;padding-left: 5px;    letter-spacing: 1px;}
+        .good_item_right{width: 219px;padding-top: 1px;
+            input{border:1px solid #d1d1d1;padding: 0 10px;height: 29px;font-weight: 300;display: block;width: 100%;}
         }
     }
-    .good_form_submit{
+    .good_form_submit{padding-top: 29px;
         button{height: 34px;min-width: 150px;background-color: #fff;
             &:hover{background-color: #000;}
         }
@@ -160,15 +160,17 @@
 
 // good_options_notice
 .good_options_notice{font-weight: 300;font-size: 15px;color: #000000;
-    p{margin: 0px 0px 15px;}
-    .good_form_row{display: flex;align-items: center;width: 100%;max-width: 480px;justify-content: space-between;padding: 13px 0;padding-right: 10px;
+    p{margin: 3px 0px 16px;}
+    .good_options_notice_wrap{margin-top: -15px;padding-left: 3px;}
+    .good_form_row{display: flex;align-items: center;width: 100%;max-width: 480px;justify-content: space-between;padding: 10px 0 14px;padding-right: 10px;
+        .good_item_right{padding-right: 5px;}
         &.good_border{border-bottom: 1px solid #d7d7d7;}
         &:first-child,&:last-child{border-bottom: none;}
         &::selection{display: none;}
          span::selection,.good_item_left::selection{display: none;}
     }
-    .good_form_submit{padding-top: 30px;
-        button{height: 34px;min-width: 150px;background-color: #fff;
+    .good_form_submit{padding-top: 39px;
+        button{height: 34px;min-width: 130px;background-color: #fff;
             &:hover{background-color: #000;}
         }
     }
@@ -177,24 +179,24 @@
 // good_about_service
 .good_about_service{
     ul{margin: 0;padding: 0;list-style-type: none;}
-    .good_about_service_title{font-size: 35px;color: rgb(1, 1, 1);line-height: 1.714;text-align: center;padding: 42px 0px;font-weight: 300;}
+    .good_about_service_title{font-size: 35px;color: rgb(1, 1, 1);line-height: 1.714;text-align: center;padding: 16px 0px 29px;font-weight: 300;}
     .good_about_service_table{
         .good_about_service_head{display: flex;align-items: center;justify-content: space-between;padding: 11px 0px;border-top: 1px solid;border-bottom: 1px solid #000;
-            .good_about_service_head_title{color: #010101;font-weight: bold;font-size: 17px;}
+            .good_about_service_head_title{color: #010101;font-weight: bold;font-size: 17px;letter-spacing: 0.5px;padding-left: 4px;}
             .good_about_service_head_icon{display: flex;align-items: center;
                 a{text-decoration: none;margin: 0 8px 0 11px;}
             }
         }
     }
     .good_about_service_body{display: flex;
-        .good_about_service_left{width: 260px;border-right: 1px solid #000;padding-top: 15px;
-            li{font-weight: 600;font-size: 13px;color: #000;padding-right: 10px;margin-bottom: 10px;
+        .good_about_service_left{width: 260px;border-right: 1px solid #000;padding-top: 19px;
+            li{font-weight: 600;font-size: 13px;color: #000;padding-right: 10px;margin-bottom: 12px;padding-left: 6px;letter-spacing: 0.7px;
                 span{cursor:pointer;}
             }
         }
-        .good_about_service_right{width: calc(100% - 260px);padding-left: 35px;padding-bottom: 20px;padding-top: 20px;
-            b{font-size: 20px;color: #010101;font-weight: bold;margin: 17px 0px 37px;display: block;}
-            p{font-size: 15px;font-weight: 300;color: #000;line-height: 1.667;}
+        .good_about_service_right{width: calc(100% - 260px);padding-left: 37px;padding-bottom: 20px;padding-top: 20px;
+            b{font-size: 20px;color: #010101;font-weight: bold;margin: 21px 0px 35px;display: block;}
+            p{font-size: 15px;font-weight: 300;color: #000;line-height: 1.667;    margin-bottom: 25px;}
         }
     }
 }
@@ -202,12 +204,13 @@
 // good_score
 .good_score{
     .good_score_wrap{padding-top: 40px;padding-bottom: 100px;border-bottom: 2px solid #f7f7f7;}
-    .good_score_title_row{display: flex;align-items: center;flex-wrap: wrap;margin-bottom: 30px;
-        &.good_row_3{align-items: flex-end;
-            .good_score_title{margin-right: 50px;}
+    .good_score_title_row{display: flex;align-items: center;flex-wrap: wrap;margin-bottom: 28px;
+        &.good_row_3{align-items: flex-end;margin-bottom: 31px;
+            .good_score_title{margin-right: 84px;}
         }
+        .good_row_2{margin-bottom: 50px;}
         &>p{margin: 0;font-size: 15px;color: rgb(0, 0, 0);line-height: 1.667;}
-        .good_score_title{font-weight: 300;font-size: 35px;color: #010101;margin-right: 30px;}
+        .good_score_title{font-weight: 300;font-size: 35px;color: #010101;margin-right: 36px;margin-top: -6px;}
         a:not([class]){font-weight: 600;font-size: 14px;color: #000;
             &:hover{text-decoration: none;}
         }
@@ -243,9 +246,9 @@
 
 // recharge
 .good_recharge{
-    .good_recharge_wrap{padding-bottom: 75px;border-bottom: 2px solid #f7f7f7;
-        .good_recharge_title{font-weight: 300;font-size: 35px;color: #010101;margin: 40px 0px;}
-        .good_recharge_table{margin-bottom: 65px;
+    .good_recharge_wrap{padding-bottom: 75px;
+        .good_recharge_title{font-weight: 300;font-size: 35px;color: #010101;margin: 40px 0px 47px;letter-spacing: 1px;}
+        .good_recharge_table{margin-bottom: 68px;
             .good_recharge_row{display: flex;align-items: center;margin-bottom: 19px;
                 &:last-child{margin-bottom: 0;}
                 &:nth-child(2){
@@ -254,7 +257,7 @@
                 &:nth-child(3){
                     .good_icon{background:transparent url('../images/good_recharge_icon_3.png') left center no-repeat;width: 20px;}
                 }
-                .good_recharge_item{font-weight: 300;font-size: 15px;color: #000000;margin-right: 18px;}
+                .good_recharge_item{font-weight: 300;font-size: 15px;color: #000000;margin-right: 24px;}
                 .good_button{height: 34px;padding: 0;display: flex;align-items: center;justify-content: center;width: 444px;font-size: 15px;font-weight: 300;
                     &:hover{
                         .good_icon{background-position: right center;}
@@ -264,8 +267,8 @@
             }
         }
         .good_recharge_bottom{padding-left: 25px;border-left: 2px solid #ff0000;font-size: 15px;color: #000000;font-weight: 300;
-            p{margin: 0;margin-bottom: 12px;}
-            .good_recharge_bottom_form_wrap{border:1px solid #e5e5e5;min-height: 67px;padding: 5px 17px;max-width: 373px;display: flex;align-items: center;justify-content: space-between;
+            p{margin: 0;margin-bottom: 12px;letter-spacing: 0.7px;}
+            .good_recharge_bottom_form_wrap{border:1px solid #e5e5e5;min-height: 67px;    padding: 5px 18px 5px 12px;max-width: 373px;display: flex;align-items: center;justify-content: space-between;
                 input{height: 36px;width: 103px;border:1px solid #e5e5e5;padding: 5px 10px;-moz-appearance: textfield;
                     &.error{border-color: red;}
                     &::-webkit-outer-spin-button,&::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;}
