@@ -1,6 +1,6 @@
 function massonry(){
     $('.good_grid').masonry({
-      columnWidth: 315,
+      columnWidth: 316,
       itemSelector: '.good_grid_item',
       gutter: 3,
       fitWidth: true

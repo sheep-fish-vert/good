@@ -15,7 +15,7 @@
             img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
             &:before{ content: attr(data-hover); background-color: rgba(0,0,0,0.75); font:300 20px/1.26 'Open Sans'; color: #fff; position: absolute; width: 100%; height: 100%; left: 0; top: 0; text-align: center; z-index: 10; padding-top: 150px; opacity: 0; transition: opacity 300ms;}
         }
-        .good_txt{padding: 27px 10px 0;
+        .good_txt{padding: 27px 10px 0;display: block;
             .good_name{font:600 14px/1.26 'Open Sans'; color: #010101; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: 7px;}
             .good_price{font:300 14px/1.26 'Open Sans'; color: #010101; width: 100%; text-align: center;}
         }
@@ -73,7 +73,7 @@
 /* trader page------------------------------------------------------*/
     .good_trader-page{
         .good_trader-wrap{
-            .good_top{ width: 100%; text-align: center;}
+            .good_top{text-align: center;margin: 0 -55px;}
             .good_bot{margin-top: -23px;
                 .good_img{ overflow: hidden; width: 290px; height: 300px; position: relative; float: left;
                     img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
@@ -103,7 +103,7 @@
                     p:last-child{padding-top: 9px;}
                 }
                 .good_third{ max-width: 141px; width: 100%;     margin-top: -4px;
-                    b{vertical-align: super;}
+                    b{vertical-align: super;display: block;}
                 }
             }
 
