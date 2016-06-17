@@ -220,8 +220,15 @@
 
             if(chosenVal == 'true'){
                 $('.good_service_block').addClass('good_active');
+                //$('.good_toggle_required').rules('remove');
             }else{
                 $('.good_item_block').addClass('good_active');
+                /*$('.good_toggle_required').rules('add', {
+                    required: true,
+                    messages: {
+                        required: "Вы пропустили"
+                    }
+                });*/
             }
 
         });
@@ -232,6 +239,9 @@
         });
 
         $('.good_options_category_item').eq(0).find('label').click();
+
+        $('.good_advert_top label').click();
+        $('.good_options_status_item').eq(0).find('label').click();
 
     }
 

@@ -66,7 +66,7 @@ function validate(form, options){
             {
                 messages: {
                     email: "Невалидный email"
-                 }
+                }
             });
         }
 
