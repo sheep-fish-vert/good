@@ -421,10 +421,10 @@
 
 /* options form */
 
-    .good_options{
+    .good_options{margin-top: -7px;
 
-        .good_options_descript{margin-bottom: 40px;
-            .good_options_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;line-height: 1.5;
+        .good_options_descript{margin-bottom: 46px;letter-spacing: 0.8px;
+            .good_options_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;line-height: 1.6;letter-spacing:0.8px;
                 .good_options_left{width: calc(100% - 500px);font-weight: 300;font-size: 15px;color:#000000;}
                 .good_options_right{width: 495px;display: flex;justify-content: flex-end;align-items: flex-start;
                     .good_options_link{width: 165px;
@@ -436,14 +436,14 @@
             }
         }
 
-        .good_form_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;margin-bottom: 30px;
+        .good_form_row{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;margin-bottom: 25px;
             &:last-child{padding-top: 20px;}
             .good_options_left{width: calc(100% - 500px);color:#010101;font-size: 15px;display: flex;align-items: flex-start;justify-content: space-between;
                 &.good_no_flex{display: block;}
                 b{font-weight: 600;}
 
-                .good_options_form_left{width: 160px;line-height: 1.55;}
-                .good_options_form_right{width: calc(100% - 185px);display: flex;justify-content: space-between;align-items: center;font-weight: 300;color:#010101;line-height: 1.55;
+                .good_options_form_left{width: 160px;line-height: 1.6;letter-spacing: 0.8px;}
+                .good_options_form_right{width: calc(100% - 185px);display: flex;justify-content: space-between;align-items: center;font-weight: 300;color:#010101;line-height: 1.6;letter-spacing: 0.8px;
                     input{width: 100%;border:1px solid #d1d1d1;height: 36px;padding:0 12px;font-weight: 300;color:#000;font-size: 14px;
                         &.error{border-color:#ff0000;}
                     }
