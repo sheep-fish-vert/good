@@ -464,6 +464,54 @@
 
 /* /options form */
 
+/* options create form */
+
+    .good_options.good_options_create_item{padding-top: 30px;
+
+        .good_form_row{align-items: center;
+            .good_options_right{padding-left: 10px;font-weight: 300;font-size: 13px;}
+        }
+
+        .good_title{font-size: 35px;font-weight: 300;color:#010101;margin: 0 0 40px 0;}
+
+        .good_form_title{font-size: 15px;font-weight: 600;color: #010101;margin-bottom: 20px;}
+
+        .good_options_radio_lists_wrap{
+            .good_options_radio_list{display: none;
+                &.good_active{display: block;}
+            }
+        }
+
+        .good_item_block, .good_service_block{display: none;
+            &.good_active{display: block;}
+        }
+
+        .good_options_radio_list{
+            .good_options_small_title{font-weight: 600;color:#000000;font-size: 15px;margin-bottom: 12px;}
+            ul{margin:0;padding: 0;list-style:none;
+                li{margin-bottom: 8px;padding-left:15px;
+                    label{position:relative;font-weight: 300;font-size: 14px;color:#000000;
+                        &:before{content:'';display: none;position: absolute;right:calc(100% + 5px);top:6px;width: 0;height: 0;border-width: 4px 4px 4px 0;border-style:solid;border-color:transparent #000 transparent transparent;}
+                        &.good_active{font-weight: 700;
+                            &:before{display: block;}
+                        }
+                    }
+                }
+            }
+        }
+
+        .good_options_price_main{width: 100%;display: flex;justify-content: flex-start;align-items: center;
+            .good_options_price_wrap{margin-right: 25px;
+                &:last-child{margin-right: 0;}
+                input{max-width: 103px;}
+                .good_currency{font-size: 18px;}
+            }
+        }
+
+    }
+
+/* /options create form */
+
 /* file placeholder */
 
     .good_file_placeholder{display: block;background-color: #ebebeb;border:2px dashed #d7d7d7;display: flex;justify-content: center;align-items: center;flex-direction:column;text-decoration: none;transition:background-color 300ms ease;

@@ -203,6 +203,40 @@
 
 /* /textarea sumbols */
 
+/* create-item scripts */
+
+    function createItemScripts(){
+
+        $(document).on('click', '.good_options_category_item label', function(){
+
+            $('.good_item_block, .good_service_block').removeClass('good_active');
+
+            var chosenVal = $(this).find('input').attr('data-service');
+            var parentIndex = $(this).parents('.good_options_category_item').index();
+
+            $('.good_options_radio_list').removeClass('good_active').eq(parentIndex).addClass('good_active');
+
+            $('.good_options_radio_list.good_active li').eq(0).find('label').click();
+
+            if(chosenVal == 'true'){
+                $('.good_service_block').addClass('good_active');
+            }else{
+                $('.good_item_block').addClass('good_active');
+            }
+
+        });
+
+        $(document).on('click', '.good_options_radio_lists_wrap label', function(){
+            $('.good_options_radio_lists_wrap label').removeClass('good_active');
+            $(this).addClass('good_active');
+        });
+
+        $('.good_options_category_item').eq(0).find('label').click();
+
+    }
+
+/* /create-item scripts */
+
 $(document).ready(function(){
 
     toggleLeftLinksSecondLevel();
@@ -212,6 +246,7 @@ $(document).ready(function(){
     cardShowInfo();
     deferredScripts();
     textareaSumbolsLeft();
+    createItemScripts();
 
 });
 
