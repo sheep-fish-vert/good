@@ -123,6 +123,16 @@ function bindExample(){
 
 }
 
+function numOnly(){
+
+    function forceNumeric(){
+        var $input = $(this);
+        $input.val($input.val().replace(/[^\d]+/g,''));
+    }
+    $(document).on('propertychange input', '.good_num_only', forceNumeric);
+
+}
+
 /*header buter*/
 function headeButer(menuMobile,toggleMenu){
     if(menuMobile){
@@ -160,6 +170,8 @@ function headeButer(menuMobile,toggleMenu){
 $(document).ready(function() {
     //oneHeightItems();
     $('.good_footer_placeholder').height($('.good_footer').outerHeight());
+
+    numOnly();
 
     //goTo();
     //animationBlock($('.setion-animate'));

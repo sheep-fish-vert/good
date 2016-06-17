@@ -460,6 +460,12 @@
             .good_button{min-width:133px;padding:7px 13px 8px 15px;}
         }
 
+        .good_service_content{
+            .good_form_row{
+                &:last-child{padding-top: 0;}
+            }
+        }
+
     }
 
 /* /options form */
@@ -468,13 +474,24 @@
 
     .good_options.good_options_create_item{padding-top: 30px;
 
+        .good_red_text{color:#ff0000;font-size: 12px;margin: 0;}
+
         .good_form_row{align-items: center;
-            .good_options_right{padding-left: 10px;font-weight: 300;font-size: 13px;}
+            .good_options_right{padding-left: 10px;font-weight: 300;font-size: 13px;line-height: 1.5;}
+            &:last-child{padding-top: 0;}
         }
 
         .good_title{font-size: 35px;font-weight: 300;color:#010101;margin: 0 0 40px 0;}
 
         .good_form_title{font-size: 15px;font-weight: 600;color: #010101;margin-bottom: 20px;}
+
+        .good_options_category_item{
+            .jq-radio{width: 13px;height: 13px;
+                &.checked{
+                    .jq-radio__div{width: 5px;height: 5px;margin: 3px 0 0 3px;}
+                }
+            }
+        }
 
         .good_options_radio_lists_wrap{
             .good_options_radio_list{display: none;
@@ -503,8 +520,105 @@
         .good_options_price_main{width: 100%;display: flex;justify-content: flex-start;align-items: center;
             .good_options_price_wrap{margin-right: 25px;
                 &:last-child{margin-right: 0;}
-                input{max-width: 103px;}
+                input{max-width: 103px;padding:0 17px 0 12px;}
                 .good_currency{font-size: 18px;}
+            }
+        }
+
+        .good_options_add_more_img{
+            .good_options_form_left{width: 160px;line-height: 1.5;
+                b{font-weight: 600;}
+            }
+            .good_options_form_right{width: calc(100% - 185px);display: flex;justify-content: flex-start;
+                .good_options_file_foto{margin-right: 10px;
+                    &:last-child{margin-right: 0;}
+                }
+            }
+        }
+
+        .good_filter_catalog_item_color{width: 100%;
+            label{margin-right: 3px;
+                &:last-child{margin-right: 0;}
+                span{width: 28px;height: 28px;}
+            }
+        }
+
+        .good_options_status_wrap{display: flex;width: 100%;align-items: center;justify-content: flex-start;
+            .good_options_status_item{margin-right: 25px;
+                &:last-child{margin-right: 0;}
+                .jq-radio{width: 13px;height: 13px;
+                    &.checked{
+                        .jq-radio__div{width: 5px;height: 5px;margin: 3px 0 0 3px;}
+                    }
+                }
+            }
+        }
+
+        .good_form_input_site{position: relative;
+            &:before{content:'http://';display: block;position: absolute;left: 13px;top:7px;}
+            input{padding:0 12px 0 55px!important;}
+        }
+
+        .good_service_select{
+            .jqselect{width: 100%;}
+        }
+
+        .good_form_item_descript_in_shop{align-items: flex-start;
+            .good_options_left{display: block;}
+            .good_advert_top, .good_advert_bottom{padding:12px 12px 12px 18px;}
+            .good_advert_top{background-color: #f7f7f7;margin-bottom: 10px;}
+            .good_advert_bottom{border:1px solid #ff0000;}
+            .good_advert_start{display: flex;align-items: center;justify-content: flex-start;
+                .good_advert_radio_wrap{margin-right: 50px;
+                    label{cursor: pointer;position: relative;}
+                    input{opacity: 0;position: absolute;top: 0;left: 0;}
+                    .good_radio_placeholder{display: block;width: 37px;height: 37px;border:1px solid #000;position:relative;
+                        &:before{content:'';display: none;background-image: url(../images/good-big-galochka.png);width: 23px;height: 15px;position: absolute;left:50%;top:50%;margin: -7px 0 0 -11px;}
+                    }
+                    input:checked+.good_radio_placeholder{
+                        &:before{display: block;}
+                    }
+                }
+                .good_advert_radio_descript{width: calc(100% - 90px);line-height: 1.25;
+                    .good_advert_descript_title{font-size: 15px;}
+                    .good_advert_descript_text{font-size: 13px;}
+                }
+            }
+            .good_advert_end{position: relative;padding:40px 0 0px 0;
+                &:before{content:'';display:block;position:absolute;top:20px;left:-18px;width: calc(100% + 30px);height: 1px;background-color: #d7d7d7;}
+
+                .good_advert_end_wrap{display: flex;justify-content: space-around;align-items: center;position:relative;margin-bottom: 20px;
+                    &:before{content:'';display: block;position: absolute;left:50%;top:0;height: 100%;width: 1px;background-color: #d7d7d7;}
+                    .good_advert_end_wrap_item{
+                        label{display: flex;align-items: center;justify-content: flex-start;padding:0 10px;}
+                        .good_checkbox{width: 37px;height: 37px;border-color:#d7d7d7;position: relative;
+                            .jq-checkbox__div{width: 23px;height: 15px;opacity: 0;position: absolute;left:50%;top:50%;margin: -7px 0 0 -11px;background-image:url("../images/good-big-galochka.png");}
+                            &.checked{
+                                .jq-checkbox__div{opacity: .3;}
+                            }
+                        }
+                        .good_advert_end_wrap_content{opacity: .57;line-height: 1.25;margin-left: 5px;
+                            .good_advert_end_wrap_content_title{font-weight: 600;font-size: 15px;color:#010101;}
+                            .good_advert_end_wrap_content_text{font-weight: 300;font-size: 14px;color:#010101;}
+                        }
+                    }
+                }
+
+                .good_advert_end_text{text-align: center;font-weight: 400;color:#000;font-size: 14px;}
+
+            }
+        }
+
+        .good_chosen_advert{display: flex;justify-content: space-around;align-items: flex-start;text-align: center;
+            .good_chosen_advert_item_title{font-size: 12px;color:#010101;margin-bottom: 12px;font-weight: 400;}
+            .good_chosen_advert_item_img{width: 177px;height: 215px;position: relative;margin: 0 auto 12px auto;overflow: hidden;border:1px solid transparent;
+                img{position: absolute;left:50%;top:50%;transform:translate(-50%, -50%);max-width: none;min-height: 100%;min-width: 100%;z-index: 0;}
+                .good_top_circle{position: absolute;bottom:10px;right:10px;z-index: 1;width: 26px;height: 26px;background-color: #5f5f5f;display: flex;justify-content: center;align-items: center;border-radius:50%;color:#fff;font-size: 10px;color:#fff;font-weight: 300;}
+            }
+            .good_chosen_advert_item_name{font-weight: 600;font-size: 12px;color:#010101;}
+            .good_chosen_advert_price{color:#010101;font-size: 13px;}
+            .good_chosen_advert_not_free{
+                .good_chosen_advert_item_img{border-color:#ff0000;}
             }
         }
 

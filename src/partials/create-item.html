@@ -405,12 +405,12 @@
                         <div class="good_options_form_right">
                             <div class="good_options_price_main">
                                 <div class="good_options_price_wrap">
-                                    <input type="tel" name="new_price" />
+                                    <input type="tel" name="new_price" class="good_num_only" />
                                     <span class="good_currency">€</span>
                                 </div>
                                 <div class="good_options_price_wrap">
                                     <span>Старая цена:</span>
-                                    <input type="tel" name="old_price" />
+                                    <input type="tel" name="old_price" class="good_num_only" />
                                     <span class="good_currency">€</span>
                                 </div>
                             </div>
@@ -442,7 +442,7 @@
                     </div>
                 </div>
 
-                <div class="good_form_row">
+                <div class="good_form_row good_options_add_more_img">
                     <div class="good_options_form_left">
                         <div class="good_item_block">
                             <b>Доп. изобраение товара:</b>
@@ -453,7 +453,7 @@
                             <p class="good_red_text">(услуга платная 0.25€ )</p>
                         </div>
                     </div>
-                    <div class="good_options_form_right good_options_add_more_img">
+                    <div class="good_options_form_right">
                         <a href="#" class="good_file_placeholder good_options_file_foto">
                             <img src="images/options-file-img.png" alt="" />
                         </a>
@@ -475,7 +475,7 @@
                     </div>
                 </div>
 
-                <div class="good_item_block">
+                <div class="good_item_content good_item_block">
 
                     <div class="good_form_row">
                         <div class="good_options_left">
@@ -587,14 +587,14 @@
 
                 </div>
 
-                <div class="good_service_block">
+                <div class="good_service_content good_service_block">
 
                     <div class="good_form_row">
                         <div class="good_options_left">
                             <div class="good_options_form_left">
                                 <b>Город:</b>
                             </div>
-                            <div class="good_options_form_right">
+                            <div class="good_options_form_right good_service_select">
                                 <select name="create_town_select">
                                     <option value="Рига">Рига</option>
                                     <option value="Рига2">Рига2</option>
@@ -612,7 +612,7 @@
                             <div class="good_options_form_left">
                                 <b>Район:</b>
                             </div>
-                            <div class="good_options_form_right">
+                            <div class="good_options_form_right good_service_select">
                                 <select name="create_department_select">
                                     <option value="Иманта">Иманта</option>
                                     <option value="Иманта2">Иманта2</option>
@@ -633,7 +633,7 @@
                             <b>Внешняя ссылка:</b>
                         </div>
                         <div class="good_options_form_right good_form_input_site">
-                            <input type="text" name="create_site" placeholder="http://" />
+                            <input type="text" name="create_site" />
                         </div>
                     </div>
                     <div class="good_options_right">
@@ -643,12 +643,17 @@
 
                 <div class="good_form_title">3. Размещение товара</div>
 
-                <div class="good_form_row">
+                <div class="good_form_row good_form_item_descript_in_shop">
+
                     <div class="good_options_left">
+
                         <div class="good_advert_top">
                             <div class="good_advert_start">
                                 <div class="good_advert_radio_wrap">
-                                    <input type="radio" name="advert_radio" value="free" checked="checked" />
+                                    <label>
+                                        <input type="radio" name="advert_radio" value="free" class="good_not_style" />
+                                        <span class="good_radio_placeholder"></span>
+                                    </label>
                                 </div>
                                 <div class="good_advert_radio_descript">
                                     <div class="good_advert_descript_title">
@@ -660,10 +665,14 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="good_advert_bottom">
                             <div class="good_advert_start">
                                 <div class="good_advert_radio_wrap">
-                                    <input type="radio" name="advert_radio" value="not_free" />
+                                    <label>
+                                        <input type="radio" name="advert_radio" value="not_free" class="good_not_style" />
+                                        <span class="good_radio_placeholder"></span>
+                                    </label>
                                 </div>
                                 <div class="good_advert_radio_descript">
                                     <div class="good_advert_descript_title">
@@ -677,42 +686,47 @@
                             <div class="good_advert_end">
                                 <div class="good_advert_end_wrap">
                                     <div class="good_advert_end_wrap_item">
-                                        <div class="good_advert_end_wrap_radio">
-                                            <input type="checkbox" class="good_checkbox" name="advert_in_top" />
-                                        </div>
-                                        <div class="good_advert_end_wrap_content">
-                                            <div class="good_advert_end_wrap_content_title">
-                                                Держать в топе
+                                        <label>
+                                            <div class="good_advert_end_wrap_checkbox">
+                                                <input type="checkbox" class="good_checkbox" name="advert_in_top" />
                                             </div>
-                                            <div class="good_advert_end_wrap_content_text">
-                                                Цена - 25 €
+                                            <div class="good_advert_end_wrap_content">
+                                                <div class="good_advert_end_wrap_content_title">
+                                                    Держать в топе
+                                                </div>
+                                                <div class="good_advert_end_wrap_content_text">
+                                                    Цена - 25 €
+                                                </div>
                                             </div>
-                                        </div>
+                                        </label>
                                     </div>
                                     <div class="good_advert_end_wrap_item">
-                                        <div class="good_advert_end_wrap_radio">
-                                            <input type="checkbox" class="good_checkbox" name="advert_pick_out" />
-                                        </div>
-                                        <div class="good_advert_end_wrap_content">
-                                            <div class="good_advert_end_wrap_content_title">
-                                                Выделить объявление
+                                        <label>
+                                            <div class="good_advert_end_wrap_checkbox">
+                                                <input type="checkbox" class="good_checkbox" name="advert_pick_out" />
                                             </div>
-                                            <div class="good_advert_end_wrap_content_text">
-                                                Цена - 25 €
+                                            <div class="good_advert_end_wrap_content">
+                                                <div class="good_advert_end_wrap_content_title">
+                                                    Выделить объявление
+                                                </div>
+                                                <div class="good_advert_end_wrap_content_text">
+                                                    Цена - 25 €
+                                                </div>
                                             </div>
-                                        </div>
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="good_advert_end_text">Итоговая сумма: 55 €</div>
                             </div>
                         </div>
+
                     </div>
+
                     <div class="good_options_right">
 
                         <div class="good_chosen_advert">
 
-
-                            <div class="good_chosen_advert_item">
+                            <div class="good_chosen_advert_item good_chosen_advert_not_free">
 
                                 <div class="good_chosen_advert_item_title">Выделенное обьявление</div>
 
@@ -728,7 +742,7 @@
 
                             <div class="good_chosen_advert_item">
 
-                                <div class="good_chosen_advert_item_title">Выделенное обьявление</div>
+                                <div class="good_chosen_advert_item_title">Бесплатное обьявление</div>
 
                                 <div class="good_chosen_advert_item_img">
                                     <img src="images/good_item_img.jpg" alt="" />
