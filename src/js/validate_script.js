@@ -213,58 +213,7 @@ function fancyboxForm(){
   })
 }
 
-//ajax func for programmer
 
-function someAjax(item, someUrl, successFunc, someData){
-
-    $(document).on('click', item, function(e){
-
-        e.preventDefault();
-
-        var itemObject = $(this);
-        var ajaxData = null;
-
-        if(typeof someData == 'function'){
-            ajaxData = someData(itemObject);
-        }else{
-            ajaxData = someData;
-        }
-
-        console.log(ajaxData);
-
-        $.ajax({
-            url:someUrl,
-            data:ajaxData,
-            method:'POST',
-            success : function(data){
-                successFunc(data, itemObject);
-            }
-        });
-
-    });
-
-}
-
-/* example for someAjax func
-
-    write like this
-    someAjax('.link', '/programer_item.php', someFuncName, {action:'someAction', item_id:id});
-
-    or
-
-    someAjax('.link','/programer_item.php', someFuncName, someDataFuncName);
-
-    where
-
-    function someDataFuncName(itemObject){
-
-        return {id:itemObject.data('id'), text:itemObject.parents('.parentOfItemObject').data('text')};
-
-        // where itemObject = $('.link') in someAjax func
-
-    }
-
-*/
 
 /* deferred ajax */
 
@@ -290,11 +239,11 @@ function someAjax(item, someUrl, successFunc, someData){
                 url:'ajax.php',
                 data:{action:'deferred_items_left', items:leftItems},
                 method:'POST'
-            })
+            });
 
         });
 
-    };
+    }
 
 /* /deferred ajax */
 
@@ -304,6 +253,7 @@ $(document).ready(function(){
    validate('.good_search_form');
    validate('.good_options_change_pass form');
    validate('.good_options_form_main');
+   validate('.good_recharge_bottom_form form');
 
    Maskedinput();
    fancyboxForm();
