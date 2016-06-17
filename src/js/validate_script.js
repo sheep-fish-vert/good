@@ -254,6 +254,7 @@ $(document).ready(function(){
    validate('.good_options_change_pass form');
    validate('.good_options_form_main');
    validate('.good_recharge_bottom_form form');
+   validate('.good_options_create_form');
 
    Maskedinput();
    fancyboxForm();
