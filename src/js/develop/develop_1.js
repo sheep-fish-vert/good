@@ -3,18 +3,29 @@
 
     function toggleLeftLinksSecondLevel(){
 
-        $(document).on('click', '.good_second_level .good_second_level_icon', function(){
+        // $(document).on('click', '.good_second_level .good_second_level_icon', function(){
 
-            var toggleItem = $(this).parents('.good_second_level').find('ul');
+        //     var toggleItem = $(this).parents('.good_second_level').find('ul');
 
-            if($(this).is('.active')){
-                $(this).removeClass('active');
-            }else{
-                $(this).addClass('active');
-            }
+        //     if($(this).is('.active')){
+        //         $(this).removeClass('active');
+        //     }else{
+        //         $(this).addClass('active');
+        //     }
 
-            toggleItem.stop().slideToggle(300);
+        //     toggleItem.stop().slideToggle(300);
 
+        // });
+
+            var toggleItem;
+        $('.good_second_level').hover(function() {
+            toggleItem = $(this).find('ul');
+            $(this).addClass('active');
+
+            toggleItem.stop().slideDown(300);
+        }, function() {
+            toggleItem.stop().slideUp(300);
+            $(this).removeClass('active');
         });
 
     }

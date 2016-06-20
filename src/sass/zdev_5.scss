@@ -23,13 +23,18 @@
 
 /*END other-trader-items------------------------------------------------------*/
 /*services-items------------------------------------------------------*/
-    .good_services-items{
+    .good_services-items{padding-top: 20px;
+
         .good_services-items-wrap{display: flex; justify-content:flex-start; flex-wrap: wrap;}
         .good_services-one-item{ width: 202px; display: block;  text-decoration: none;margin-right: 31px;   margin-bottom: 42px;
+            &:hover{
+                .good_img:before{ opacity:1;}
+            }
             &:nth-child(4n){ margin-right: 0;}
         }
         .good_img{ height: 244px; position: relative; width: 100%; overflow: hidden;border: 1px solid #ebebeb;
             img{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);max-width: none;}
+            &:before{ content: attr(data-hover); background-color: rgba(0,0,0,0.75); font:300 20px/1.26 'Open Sans'; color: #fff; position: absolute; width: 100%; height: 100%; left: 0; top: 0; text-align: center; z-index: 10; padding-top: 110px; opacity: 0; transition: opacity 300ms;}
             .good_top{ position: absolute; width: 100%; height: 100%; left: 0; top: 0;
                 p{border-radius: 50%; background-color: #676767; width: 30px; height: 30px;font:300 12px/30px 'Open Sans'; color: #fff; text-align: center; position: absolute; bottom: 6px; right: 10px; margin: 0;}
 
