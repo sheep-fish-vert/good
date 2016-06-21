@@ -97,31 +97,6 @@ function cutText(){
 
 //bind example
 
-function bindExample(){
-
-    $(document).bind('click', bindFunc);
-
-    function bindFunc(){
-
-        $(document).unbind('click');
-
-        console.log('unbinded');
-
-        $.ajax({
-            url:'ajax.php',
-            method:'POST',
-            success:function(){
-
-                setTimeout(function(){
-                    console.log('binded');
-                    $(document).bind('click', bindFunc);
-                },4000);
-
-            }
-        });
-    };
-
-}
 
 function numOnly(){
 

@@ -533,6 +533,19 @@
         .good_form_row{align-items: center;
             .good_options_right{padding-left: 10px;font-weight: 300;font-size: 13px;line-height: 1.5;}
             &:last-child{padding-top: 0;}
+
+            &.align-top{align-items:flex-start;
+                .good_options_left{width: calc(100% - 525px);}
+                .good_options_right{width: 470px;}
+                .good_options_textarea_wrap p{font-weight: 300;font-size: 12px;}
+                .good_options_right input{width: 100%;border: 1px solid #d1d1d1;height: 36px;padding: 0 12px;font-weight: 300;color: #000;font-size: 14px;}
+                textarea{border:1px solid #d3d3d3;
+                    &::-webkit-input-placeholder {color:rgba(0,0,0, .5);}
+                    &:-moz-placeholder {color:rgba(0,0,0, .5);opacity:1;}
+                    &::-moz-placeholder {color:rgba(0,0,0, .5);opacity:1;}
+                    &:-ms-input-placeholder {color:rgba(0,0,0, .5);}
+                }
+            }
         }
 
         .good_title{font-size: 35px;font-weight: 300;color:#010101;margin: 0 0 40px 0;}
@@ -558,7 +571,7 @@
         }
 
         //  op-  op - opa - opacaha
-        .good_form_attention{margin-left: 55px;margin-bottom: 22px;
+        .good_form_attention{margin-left: 55px;margin-bottom: 10px;
             .good_form_attention_wrap{padding-left: 37px;border-left: 4px solid #ff0000;max-width: 630px;
                 b{color: #ff0000;}
                 p{font-size: 14px;line-height: 1.571;margin: 0;padding: 1px 0px;}
@@ -646,7 +659,7 @@
                     label{cursor: pointer;position: relative;}
                     input{opacity: 0;position: absolute;top: 0;left: 0;}
                     .good_radio_placeholder{display: block;width: 37px;height: 37px;border:1px solid #000;position:relative;
-                        &:before{content:'';display: none;background-image: url(../images/good-big-galochka.png);width: 23px;height: 15px;position: absolute;left:50%;top:50%;margin: -7px 0 0 -11px;}
+                        &:before{content:'';display: none;background-image: url(../images/good-big-galochka.png);width: 23px;height: 15px;position: absolute;left:50%;top:50%;margin: -7px 0 0 -11px;background-color: transparent;}
                     }
                     input:checked+.good_radio_placeholder{
                         &:before{display: block;}
