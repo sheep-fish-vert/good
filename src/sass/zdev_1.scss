@@ -731,9 +731,7 @@
             .good_chosen_advert_item_name{font-weight: 600;font-size: 12px;color:#010101;}
             .good_chosen_advert_price{color:#010101;font-size: 13px;}
             .good_chosen_advert_not_free{
-                .good_chosen_advert_item_img{
-                    &:hover{border-color:#ff0000;}
-                }
+                .good_chosen_advert_item_img{border-color:#ff0000;}
             }
         }
 
