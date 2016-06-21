@@ -577,6 +577,7 @@
                 p{font-size: 14px;line-height: 1.571;margin: 0;padding: 1px 0px;}
             }
         }
+
         .good_form_row {
             //.good_options_textarea_wrap p{top: calc(100% - 54px);bottom: auto;}
 
@@ -588,6 +589,32 @@
             }
         }
 
+        button.jscolor{width: 28px;height: 28px;display: inline-block;border: 1px solid transparent;position: relative;
+            &:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background:transparent url('../images/jscolor-bg.png') center center no-repeat;content: '';z-index: 10;}
+            &.active{border: 1px solid #d1d1d1;
+                &:after{z-index: -10;opacity: 0;}
+            }
+        }
+        .good_filter_catalog_item_color_text{position: absolute;left: 54%;font-size: 13px;font-weight: 300;padding-top: 4px;}
+
+        .good_form_item_rules{justify-content: flex-start;
+            label{cursor: pointer;position: relative;overflow: hidden;margin-right: 10px;
+                input{opacity: 0;position: absolute;top: 0;left: 0;
+                    &.error{
+                        + span.good_form_item_placeholder{border: 1px solid red;}
+                    }
+                    &:checked + span.good_form_item_placeholder:after{display: block;}
+                }
+                span.good_form_item_placeholder{    display: block;width: 37px;height: 37px;border: 1px solid #000;position: relative;
+                    &:after{content: '';display: none;background-image: url(../images/good-big-galochka.png);width: 23px;height: 15px;position: absolute;left: 50%;top: 50%;margin: -7px 0 0 -11px;background-color: transparent;}
+                }
+            }
+            p{margin: 0;font-size: 14px;
+                a{color: #ff0000;
+                    &:hover{text-decoration: none;}
+                }
+            }
+        }
 
         .good_options_radio_list{
             .good_options_small_title{font-weight: 600;color:#000000;font-size: 15px;margin-bottom: 12px;}
@@ -649,7 +676,7 @@
             .jqselect{width: 100%;}
         }
 
-        .good_form_item_descript_in_shop{align-items: flex-start;
+        .good_form_item_descript_in_shop{align-items: flex-start;margin-bottom: 0;
             .good_options_left{display: block;}
             .good_advert_top, .good_advert_bottom{padding:12px 12px 12px 18px;}
             .good_advert_top{background-color: #f7f7f7;margin-bottom: 10px;}
@@ -704,7 +731,9 @@
             .good_chosen_advert_item_name{font-weight: 600;font-size: 12px;color:#010101;}
             .good_chosen_advert_price{color:#010101;font-size: 13px;}
             .good_chosen_advert_not_free{
-                .good_chosen_advert_item_img{border-color:#ff0000;}
+                .good_chosen_advert_item_img{
+                    &:hover{border-color:#ff0000;}
+                }
             }
         }
 

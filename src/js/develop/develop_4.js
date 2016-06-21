@@ -78,6 +78,11 @@ function itemsListCheck() {
     });
 }
 
+function labelColor(jscolor) {
+    $('button.jscolor').addClass('active');
+}
+
+
 $(document).ready(function(){
     $('input:not(.good_filter_catalog_checkbox):not(.good_not_style):not([type="number"]), select:not(.good_select_has_img)').styler();
 
