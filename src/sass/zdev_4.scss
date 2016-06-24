@@ -192,6 +192,9 @@
         .good_about_service_left{width: 260px;border-right: 1px solid #000;padding-top: 19px;
             li{font-weight: 600;font-size: 13px;color: #000;padding-right: 10px;margin-bottom: 12px;padding-left: 6px;letter-spacing: 0.7px;
                 span{cursor:pointer;}
+                &.active,&:hover{
+                    span{color: #ff0000;}
+                }
             }
         }
         .good_about_service_right{width: calc(100% - 260px);padding-left: 37px;padding-bottom: 20px;padding-top: 20px;
